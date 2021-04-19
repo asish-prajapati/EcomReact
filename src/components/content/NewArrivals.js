@@ -1,14 +1,14 @@
 import React from "react";
 import product1 from "../../images/product/product1.jpg";
 import product11 from "../../images/product/product1-1.jpg";
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
 //import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 export default function NewArrivals() {
   return (
     <div className="tab-pane active" id="nArrivals">
-      {/* <div className="nArrivals owl-carousel"> */}
-      <OwlCarousel className="owl-carousel" items={4} margin={10} nav>
+      <div className="nArrivals owl-carousel">
+        {/* <OwlCarousel className="owl-carousel" items={4} margin={10} nav> */}
         {[0, 1, 2, 3, 4].map((item, index) => {
           console.log(index);
           return (
@@ -170,8 +170,8 @@ export default function NewArrivals() {
             </div>
           );
         })}
-      </OwlCarousel>
-      {/* </div> */}
+        {/* </OwlCarousel> */}
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import user1 from "../../images/user1.jpg";
 import user2 from "../../images/user2.jpg";
 import user3 from "../../images/user3.jpg";
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
 
 function LeftColTestimonial() {
   return (
@@ -10,13 +10,13 @@ function LeftColTestimonial() {
       <div className="heading-part mb_20 ">
         <h2 className="main_title">Testimonial</h2>
       </div>
-      {/* <div className="client owl-carousel text-center pt_10"> */}
-      <OwlCarousel
+      <div className="client owl-carousel text-center pt_10">
+        {/* <OwlCarousel
         items={1}
         margin={10}
         nav
         className="client text-center pt_10"
-      >
+      > */}
         <div className="item client-detail">
           <div className="client-avatar">
             {" "}
@@ -62,9 +62,9 @@ function LeftColTestimonial() {
             amet, sea in odio ..
           </p>
         </div>
-      </OwlCarousel>
+        {/* </OwlCarousel> */}
+      </div>
     </div>
-    // </div>
   );
 }
 

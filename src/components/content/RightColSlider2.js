@@ -1,5 +1,5 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
 import product8 from "../../images/product/product8.jpg";
 import product81 from "../../images/product/product8-1.jpg";
 
@@ -9,8 +9,8 @@ function RightColSlider2() {
       <div className="heading-part mb_20 ">
         <h2 className="main_title">Home Electronics</h2>
       </div>
-      {/* <div className="Specials owl-carousel"> */}
-      <OwlCarousel className="Specials" items={1} margin={10} nav>
+      <div className="Specials owl-carousel">
+        {/* <OwlCarousel className="Specials" items={1} margin={10} nav> */}
         {[0, 1, 2].map((item, index) => (
           <div key={index} className="item product-layout product-list">
             <div className="product-thumb">
@@ -107,8 +107,8 @@ function RightColSlider2() {
             </div>
           </div>
         ))}
-      </OwlCarousel>
-      {/* </div> */}
+        {/* </OwlCarousel> */}
+      </div>
     </div>
   );
 }

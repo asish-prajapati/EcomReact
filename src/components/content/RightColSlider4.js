@@ -1,5 +1,5 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
 import blog_img_01 from "../../images/blog/blog_img_01.jpg";
 import blog_img_02 from "../../images/blog/blog_img_02.jpg";
 import blog_img_03 from "../../images/blog/blog_img_03.jpg";
@@ -14,8 +14,8 @@ function RightColSlider4() {
         <h2 className="main_title">Latest from the Blog</h2>
       </div>
       <div className="blog-contain box">
-        {/* <div className="blog owl-carousel "> */}
-        <OwlCarousel className="blog" items={2} margin={10} nav>
+        <div className="blog owl-carousel ">
+          {/* <OwlCarousel className="blog" items={2} margin={10} nav> */}
           <div className="item">
             <div className="box-holder">
               <div className="thumb post-img">
@@ -172,8 +172,8 @@ function RightColSlider4() {
               </div>
             </div>
           </div>
-        </OwlCarousel>
-        {/* </div> */}
+          {/* </OwlCarousel> */}
+        </div>
       </div>
       {/* <!-- =====  Blog end ===== --> */}
     </div>

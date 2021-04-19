@@ -38,11 +38,11 @@ $("#contact_body").submit(function(e){
             processData:false
         }).done(function(res){ //fetch server "json" messages when done
             if(res.type == "error"){
-                $("#contact_results").html('<div className="error">'+ res.text +"</div>");
+                $("#contact_results").html('<div class="error">'+ res.text +"</div>");
             }
 
             if(res.type == "done"){
-    			$("#contact_results").html('<div className="success alert alert-success">'+ res.text +"</div>");
+    			$("#contact_results").html('<div class="success alert alert-success">'+ res.text +"</div>");
 			}
 		});
 	}

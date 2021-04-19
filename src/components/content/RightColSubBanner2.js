@@ -7,10 +7,9 @@ function RightColSubBanner2() {
       <div className="cms_banner mt_40 mb_50">
         <div className="col-xs-12">
           <div id="subbanner3" className="banner sub-hover">
-            {" "}
             <a href="#">
               <img src={sub3} alt="Sub Banner3" className="img-responsive" />
-            </a>{" "}
+            </a>
           </div>
         </div>
       </div>

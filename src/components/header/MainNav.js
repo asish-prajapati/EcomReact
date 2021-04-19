@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import healthcareImg from "../../images/logo.png";
 
 function MainNav() {
@@ -178,13 +179,13 @@ function MainNav() {
           <div className="collapse navbar-collapse js-navbar-collapse pull-right">
             <ul id="menu" className="nav navbar-nav">
               <li>
-                <a href="index-2.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="category_page.html">Shop</a>
+                <Link to="/products">Shop</Link>
               </li>
               <li>
-                <a href="blog_page.html">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li className="dropdown mega-dropdown">
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">
@@ -278,7 +279,6 @@ function MainNav() {
                       >
                         <div className="carousel-inner">
                           <div className="item active">
-                            {" "}
                             <a href="#">
                               <img
                                 src="images/menu-banner1.jpg"
@@ -289,7 +289,6 @@ function MainNav() {
                           </div>
                           {/* /                          <!-- End Item --> */}
                           <div className="item">
-                            {" "}
                             <a href="#">
                               <img
                                 src="images/menu-banner2.jpg"
@@ -300,7 +299,6 @@ function MainNav() {
                           </div>
                           {/* /                          <!-- End Item --> */}
                           <div className="item">
-                            {" "}
                             <a href="#">
                               <img
                                 src="images/menu-banner3.jpg"
@@ -319,35 +317,28 @@ function MainNav() {
                 </ul>
               </li>
               <li className="dropdown">
-                {" "}
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                  Pages{" "}
+                  Pages
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    {" "}
-                    <a href="contact_us.html">Contact us</a>
+                    <Link to="/contactus">Contact Us</Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="cart_page.html">Cart</a>
+                    <Link to="/cart">Cart</Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="checkout_page.html">Checkout</a>
+                    <Link to="/checkout">Checkout</Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="product_detail_page.html">Product Detail Page</a>
+                    <Link to="/productdetail">Product Detail Page</Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="single_blog.html">Single Post</a>
+                    <Link to="/singlepost">Single Post</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                {" "}
                 <a href="about.html">About us</a>
               </li>
             </ul>

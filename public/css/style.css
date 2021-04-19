@@ -10,9 +10,9 @@ Created by: 	Lionode
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 /* -----  ionicons Font  -----*/
-/* @import url("ionicons.min.css"); */
+@import url("ionicons.min.css");
 /* -----  font awesome Font  -----*/
-/* @import url("font-awesome.min.css"); */
+@import url("font-awesome.min.css");
 /* =====  INDEX OF STYLES ===== 
 01 ===== BASIC  =====
   1.1 General
@@ -2071,37 +2071,13 @@ blockquote {
 .owl-nav {
   position: absolute;
   top: -62px;
-
-  text-align: right;
-}
-.Specials .owl-nav {
-  position: absolute;
-  top: -62px;
-  right: 0%;
-}
-.top-products .owl-nav {
-  position: absolute;
-  top: -62px;
   width: 100%;
-  text-align: right;
 }
-.client .owl-nav {
-  position: absolute;
-  top: -62px;
-  width: 100%;
-  text-align: right;
-}
-
 .offers .owl-nav {
   position: absolute;
   right: 0px;
   top: 11px;
   width: 100%;
-}
-#featu-pro .owl-nav {
-  position: absolute;
-  top: -62px;
-  right: 0%;
 }
 .related-pro .owl-nav,
 .team_grid .owl-nav {
@@ -2124,7 +2100,7 @@ blockquote {
   border-color: #e74c3c;
 }
 .owl-item .client-avatar > img {
-  border-radius: 50% !important;
+  border-radius: 50%;
   width: auto !important;
 }
 .owl-nav .owl-prev {
@@ -2138,7 +2114,7 @@ blockquote {
   transition: 0.5s;
 }
 .owl-nav .owl-next {
-  left: auto !important;
+  left: auto;
   opacity: 1;
   right: 0;
 }
