@@ -1,5 +1,4 @@
 import React from "react";
-// import OwlCarousel from "react-owl-carousel";
 
 function LeftColTopProducts() {
   return (
@@ -8,7 +7,7 @@ function LeftColTopProducts() {
         <h2 className="main_title">Top Products</h2>
       </div>
       <div id="left-special" className="owl-carousel">
-        {/* <OwlCarousel items={1} className="top-products" margin={10} nav> */}
+        {/* <OwlCarousel items={1} id="left-special" margin={10} nav> */}
         <ul className="row ">
           <li className="item product-layout-left mb_20">
             <div className="product-list col-xs-4">

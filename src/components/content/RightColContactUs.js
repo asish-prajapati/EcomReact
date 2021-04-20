@@ -72,7 +72,7 @@ function RightColContactUs() {
                 type="text"
                 name="phone1"
                 placeholder="Phone Number"
-                maxlength="15"
+                maxLength="15"
                 data-required="true"
               />
 

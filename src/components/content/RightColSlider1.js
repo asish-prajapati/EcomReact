@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import NewArrivals from "./NewArrivals";
+import React from "react";
 
 function RightColSlider1() {
   return (

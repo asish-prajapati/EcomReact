@@ -1,6 +1,4 @@
 import React from "react";
-import sub1 from "../../images/sub1.jpg";
-import sub2 from "../../images/sub2.jpg";
 
 function RightColSubBanner1() {
   return (
@@ -10,7 +8,11 @@ function RightColSubBanner1() {
           <div id="subbanner1" className="sub-hover">
             {" "}
             <a href="#">
-              <img src={sub1} alt="Sub Banner1" className="img-responsive" />
+              <img
+                src="images/sub1.jpg"
+                alt="Sub Banner1"
+                className="img-responsive"
+              />
             </a>
             <div className="bannertext">
               <h2>Full HD Camera</h2>
@@ -22,7 +24,11 @@ function RightColSubBanner1() {
           <div id="subbanner2" className="sub-hover">
             {" "}
             <a href="#">
-              <img src={sub2} alt="Sub Banner2" className="img-responsive" />
+              <img
+                src="images/sub2.jpg"
+                alt="Sub Banner2"
+                className="img-responsive"
+              />
             </a>
             <div className="bannertext">
               <h2>smart watches</h2>

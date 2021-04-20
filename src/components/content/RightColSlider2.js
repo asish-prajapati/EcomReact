@@ -1,7 +1,5 @@
 import React from "react";
 // import OwlCarousel from "react-owl-carousel";
-import product8 from "../../images/product/product8.jpg";
-import product81 from "../../images/product/product8-1.jpg";
 
 function RightColSlider2() {
   return (
@@ -20,13 +18,13 @@ function RightColSlider2() {
                   {" "}
                   <img
                     data-name="product_image"
-                    src={product8}
+                    src="images/product/product8.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
                   />{" "}
                   <img
-                    src={product81}
+                    src="images/product/product8-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"

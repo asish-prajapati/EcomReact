@@ -1,11 +1,5 @@
 import React from "react";
 // import OwlCarousel from "react-owl-carousel";
-import blog_img_01 from "../../images/blog/blog_img_01.jpg";
-import blog_img_02 from "../../images/blog/blog_img_02.jpg";
-import blog_img_03 from "../../images/blog/blog_img_03.jpg";
-import blog_img_04 from "../../images/blog/blog_img_04.jpg";
-import blog_img_05 from "../../images/blog/blog_img_05.jpg";
-import blog_img_06 from "../../images/blog/blog_img_06.jpg";
 
 function RightColSlider4() {
   return (
@@ -21,7 +15,10 @@ function RightColSlider4() {
               <div className="thumb post-img">
                 <a href="#">
                   {" "}
-                  <img src={blog_img_01} alt="HealthCare" />{" "}
+                  <img
+                    src="images/blog/blog_img_01.jpg"
+                    alt="HealthCare"
+                  />{" "}
                 </a>{" "}
               </div>
               <div className="post-info mtb_20 ">
@@ -47,7 +44,10 @@ function RightColSlider4() {
               <div className="thumb post-img">
                 <a href="#">
                   {" "}
-                  <img src={blog_img_02} alt="HealthCare" />{" "}
+                  <img
+                    src="images/blog/blog_img_02.jpg"
+                    alt="HealthCare"
+                  />{" "}
                 </a>
               </div>
               <div className="post-info mtb_20 ">
@@ -73,7 +73,10 @@ function RightColSlider4() {
               <div className="thumb post-img">
                 <a href="#">
                   {" "}
-                  <img src={blog_img_03} alt="HealthCare" />{" "}
+                  <img
+                    src="images/blog/blog_img_03.jpg"
+                    alt="HealthCare"
+                  />{" "}
                 </a>
               </div>
               <div className="post-info mtb_20 ">
@@ -99,7 +102,10 @@ function RightColSlider4() {
               <div className="thumb post-img">
                 <a href="#">
                   {" "}
-                  <img src={blog_img_04} alt="HealthCare" />{" "}
+                  <img
+                    src="images/blog/blog_img_04.jpg"
+                    alt="HealthCare"
+                  />{" "}
                 </a>
               </div>
               <div className="post-info mtb_20 ">
@@ -125,7 +131,10 @@ function RightColSlider4() {
               <div className="thumb post-img">
                 <a href="#">
                   {" "}
-                  <img src={blog_img_05} alt="HealthCare" />{" "}
+                  <img
+                    src="images/blog/blog_img_05.jpg"
+                    alt="HealthCare"
+                  />{" "}
                 </a>
               </div>
               <div className="post-info mtb_20 ">
@@ -151,7 +160,10 @@ function RightColSlider4() {
               <div className="thumb post-img">
                 <a href="#">
                   {" "}
-                  <img src={blog_img_06} alt="HealthCare" />{" "}
+                  <img
+                    src="images/blog/blog_img_06.jpg"
+                    alt="HealthCare"
+                  />{" "}
                 </a>
               </div>
               <div className="post-info mtb_20 ">

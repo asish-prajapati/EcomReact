@@ -1,5 +1,4 @@
 import React from "react";
-import sub3 from "../../images/sub3.jpg";
 
 function RightColSubBanner2() {
   return (
@@ -8,7 +7,11 @@ function RightColSubBanner2() {
         <div className="col-xs-12">
           <div id="subbanner3" className="banner sub-hover">
             <a href="#">
-              <img src={sub3} alt="Sub Banner3" className="img-responsive" />
+              <img
+                src="images/sub3.jpg"
+                alt="Sub Banner3"
+                className="img-responsive"
+              />
             </a>
           </div>
         </div>

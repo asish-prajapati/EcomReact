@@ -2305,7 +2305,7 @@ a.thumbnail.active {
 ----------------------------------------------- */
 
 #scrollup {
-  background: url("../images/scroll.png") no-repeat;
+  background: url("images/scroll.png") no-repeat;
   width: 60px;
   height: 60px;
   position: fixed;

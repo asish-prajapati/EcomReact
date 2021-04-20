@@ -1,5 +1,4 @@
 import React from "react";
-import main_banner1 from "../../images/main_banner1.jpg";
 
 function RightColBanner() {
   return (
@@ -9,7 +8,7 @@ function RightColBanner() {
           <div className="item">
             <a href="#">
               <img
-                src={main_banner1}
+                src="images/main_banner1.jpg"
                 alt="Main Banner"
                 className="img-responsive"
               />

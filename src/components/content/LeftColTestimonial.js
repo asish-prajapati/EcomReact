@@ -1,7 +1,5 @@
 import React from "react";
-import user1 from "../../images/user1.jpg";
-import user2 from "../../images/user2.jpg";
-import user3 from "../../images/user3.jpg";
+
 // import OwlCarousel from "react-owl-carousel";
 
 function LeftColTestimonial() {
@@ -20,7 +18,7 @@ function LeftColTestimonial() {
         <div className="item client-detail">
           <div className="client-avatar">
             {" "}
-            <img alt="" src={user1} />{" "}
+            <img alt="" src="images/user1.jpg" />{" "}
           </div>
           <div className="client-title  mt_30">
             <strong>joseph Lui</strong>
@@ -35,7 +33,7 @@ function LeftColTestimonial() {
         <div className="item client-detail">
           <div className="client-avatar">
             {" "}
-            <img alt="" src={user2} />{" "}
+            <img alt="" src="images/user2.jpg" />{" "}
           </div>
           <div className="client-title  mt_30">
             <strong>joseph Lui</strong>
@@ -50,7 +48,7 @@ function LeftColTestimonial() {
         <div className="item client-detail">
           <div className="client-avatar">
             {" "}
-            <img alt="" src={user3} />{" "}
+            <img alt="" src="images/user3.jpg" />{" "}
           </div>
           <div className="client-title  mt_30">
             <strong>joseph Lui</strong>

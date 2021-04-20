@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import healthcareImg from "../../images/logo.png";
 
 function MainNav() {
   return (
@@ -8,9 +7,9 @@ function MainNav() {
       <div className="container">
         <nav className="navbar">
           <div className="navbar-header mtb_20">
-            <a className="navbar-brand" href="index-2.html">
-              <img alt="HealthCared" src={healthcareImg} />
-            </a>
+            <Link className="navbar-brand" to="/">
+              <img alt="HealthCared" src="images/logo.png" />
+            </Link>
           </div>
           <div className="header-right pull-right mtb_50">
             <button
@@ -339,7 +338,7 @@ function MainNav() {
                 </ul>
               </li>
               <li>
-                <a href="about.html">About us</a>
+                <Link to="/aboutus">About us</Link>
               </li>
             </ul>
           </div>
