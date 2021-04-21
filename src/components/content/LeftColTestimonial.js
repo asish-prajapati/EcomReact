@@ -17,8 +17,7 @@ function LeftColTestimonial() {
       > */}
         <div className="item client-detail">
           <div className="client-avatar">
-            {" "}
-            <img alt="" src="images/user1.jpg" />{" "}
+            <img alt="" src="images/user1.jpg" />
           </div>
           <div className="client-title  mt_30">
             <strong>joseph Lui</strong>
@@ -32,8 +31,7 @@ function LeftColTestimonial() {
         </div>
         <div className="item client-detail">
           <div className="client-avatar">
-            {" "}
-            <img alt="" src="images/user2.jpg" />{" "}
+            <img alt="" src="images/user2.jpg" />
           </div>
           <div className="client-title  mt_30">
             <strong>joseph Lui</strong>
@@ -47,8 +45,7 @@ function LeftColTestimonial() {
         </div>
         <div className="item client-detail">
           <div className="client-avatar">
-            {" "}
-            <img alt="" src="images/user3.jpg" />{" "}
+            <img alt="" src="images/user3.jpg" />
           </div>
           <div className="client-title  mt_30">
             <strong>joseph Lui</strong>

@@ -10,8 +10,7 @@ function RightColTeamSection() {
         <div className="team3col  owl-carousel">
           <div className="item team-detail">
             <div className="team-item-img">
-              {" "}
-              <img src="images/tm1.jpg" alt="" />{" "}
+              <img src="images/tm1.jpg" alt="" />
             </div>
             <div className="team-designation mt_20">php Developer</div>
             <h4 className="team-title  mtb_10">joseph Lui </h4>
@@ -49,8 +48,7 @@ function RightColTeamSection() {
           </div>
           <div className="item team-detail">
             <div className="team-item-img">
-              {" "}
-              <img src="images/tm2.jpg" alt="" />{" "}
+              <img src="images/tm2.jpg" alt="" />
             </div>
             <div className="team-designation mt_20">php Developer</div>
             <h4 className="team-title  mtb_10">joseph Lui </h4>
@@ -88,8 +86,7 @@ function RightColTeamSection() {
           </div>
           <div className="item team-detail">
             <div className="team-item-img">
-              {" "}
-              <img src="images/tm3.jpg" alt="" />{" "}
+              <img src="images/tm3.jpg" alt="" />
             </div>
             <div className="team-designation mt_20">php Developer</div>
             <h4 className="team-title  mtb_10">joseph Lui </h4>
@@ -127,8 +124,7 @@ function RightColTeamSection() {
           </div>
           <div className="item team-detail">
             <div className="team-item-img">
-              {" "}
-              <img src="images/tm4.jpg" alt="" />{" "}
+              <img src="images/tm4.jpg" alt="" />
             </div>
             <div className="team-designation mt_20">php Developer</div>
             <h4 className="team-title  mtb_10">joseph Lui </h4>
@@ -166,8 +162,7 @@ function RightColTeamSection() {
           </div>
           <div className="item team-detail">
             <div className="team-item-img">
-              {" "}
-              <img src="images/tm5.jpg" alt="" />{" "}
+              <img src="images/tm5.jpg" alt="" />
             </div>
             <div className="team-designation mt_20">php Developer</div>
             <h4 className="team-title  mtb_10">joseph Lui </h4>

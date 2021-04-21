@@ -1,4 +1,5 @@
 import React from "react";
+import LeftColBanner1 from "../LeftColBanner1";
 import LeftColCategory from "../LeftColCategory";
 import RightColContactUs from "../RightColContactUs";
 
@@ -8,15 +9,7 @@ function ContactUs() {
       <div className="row">
         <div id="column-left" className="col-sm-4 col-md-4 col-lg-3 ">
           <LeftColCategory />
-          <div className="left_banner left-sidebar-widget mt_30 mb_50">
-            <a href="#">
-              <img
-                src="/images/left1.jpg"
-                alt="Left Banner"
-                className="img-responsive"
-              />
-            </a>
-          </div>
+          <LeftColBanner1 />
         </div>
         <div id="column-right" className="col-sm-8 col-md-8 col-lg-9 mtb_30">
           <RightColContactUs />

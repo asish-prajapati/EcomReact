@@ -14,19 +14,14 @@ function RightColSlider4() {
             <div className="box-holder">
               <div className="thumb post-img">
                 <a href="#">
-                  {" "}
-                  <img
-                    src="images/blog/blog_img_01.jpg"
-                    alt="HealthCare"
-                  />{" "}
-                </a>{" "}
+                  <img src="images/blog/blog_img_01.jpg" alt="HealthCare" />
+                </a>
               </div>
               <div className="post-info mtb_20 ">
                 <h6 className="mb_10 text-uppercase">
-                  {" "}
                   <a href="single_blog.html">
                     Unknown printer took a galley book.
-                  </a>{" "}
+                  </a>
                 </h6>
                 <p>
                   Aliquam egestas pellentesque est. Etiam a orci Nulla id enim
@@ -43,19 +38,14 @@ function RightColSlider4() {
             <div className="box-holder">
               <div className="thumb post-img">
                 <a href="#">
-                  {" "}
-                  <img
-                    src="images/blog/blog_img_02.jpg"
-                    alt="HealthCare"
-                  />{" "}
+                  <img src="images/blog/blog_img_02.jpg" alt="HealthCare" />
                 </a>
               </div>
               <div className="post-info mtb_20 ">
                 <h6 className="mb_10 text-uppercase">
-                  {" "}
                   <a href="single_blog.html">
                     Unknown printer took a galley book.
-                  </a>{" "}
+                  </a>
                 </h6>
                 <p>
                   Aliquam egestas pellentesque est. Etiam a orci Nulla id enim
@@ -72,19 +62,14 @@ function RightColSlider4() {
             <div className="box-holder">
               <div className="thumb post-img">
                 <a href="#">
-                  {" "}
-                  <img
-                    src="images/blog/blog_img_03.jpg"
-                    alt="HealthCare"
-                  />{" "}
+                  <img src="images/blog/blog_img_03.jpg" alt="HealthCare" />
                 </a>
               </div>
               <div className="post-info mtb_20 ">
                 <h6 className="mb_10 text-uppercase">
-                  {" "}
                   <a href="single_blog.html">
                     Unknown printer took a galley book.
-                  </a>{" "}
+                  </a>
                 </h6>
                 <p>
                   Aliquam egestas pellentesque est. Etiam a orci Nulla id enim
@@ -101,19 +86,14 @@ function RightColSlider4() {
             <div className="box-holder">
               <div className="thumb post-img">
                 <a href="#">
-                  {" "}
-                  <img
-                    src="images/blog/blog_img_04.jpg"
-                    alt="HealthCare"
-                  />{" "}
+                  <img src="images/blog/blog_img_04.jpg" alt="HealthCare" />
                 </a>
               </div>
               <div className="post-info mtb_20 ">
                 <h6 className="mb_10 text-uppercase">
-                  {" "}
                   <a href="single_blog.html">
                     Unknown printer took a galley book.
-                  </a>{" "}
+                  </a>
                 </h6>
                 <p>
                   Aliquam egestas pellentesque est. Etiam a orci Nulla id enim
@@ -130,19 +110,14 @@ function RightColSlider4() {
             <div className="box-holder">
               <div className="thumb post-img">
                 <a href="#">
-                  {" "}
-                  <img
-                    src="images/blog/blog_img_05.jpg"
-                    alt="HealthCare"
-                  />{" "}
+                  <img src="images/blog/blog_img_05.jpg" alt="HealthCare" />
                 </a>
               </div>
               <div className="post-info mtb_20 ">
                 <h6 className="mb_10 text-uppercase">
-                  {" "}
                   <a href="single_blog.html">
                     Unknown printer took a galley book.
-                  </a>{" "}
+                  </a>
                 </h6>
                 <p>
                   Aliquam egestas pellentesque est. Etiam a orci Nulla id enim
@@ -159,19 +134,14 @@ function RightColSlider4() {
             <div className="box-holder">
               <div className="thumb post-img">
                 <a href="#">
-                  {" "}
-                  <img
-                    src="images/blog/blog_img_06.jpg"
-                    alt="HealthCare"
-                  />{" "}
+                  <img src="images/blog/blog_img_06.jpg" alt="HealthCare" />
                 </a>
               </div>
               <div className="post-info mtb_20 ">
                 <h6 className="mb_10 text-uppercase">
-                  {" "}
                   <a href="single_blog.html">
                     Unknown printer took a galley book.
-                  </a>{" "}
+                  </a>
                 </h6>
                 <p>
                   Aliquam egestas pellentesque est. Etiam a orci Nulla id enim

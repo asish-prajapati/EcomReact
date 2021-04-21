@@ -1,5 +1,5 @@
 import React from "react";
-import englishIcon from "../../images/English-icon.gif";
+import { Link } from "react-router-dom";
 
 function TopNav() {
   return (
@@ -10,7 +10,6 @@ function TopNav() {
             <div className="col-sm-6">
               <ul className="header-top-left">
                 <li className="language dropdown">
-                  {" "}
                   <span
                     className="dropdown-toggle"
                     id="dropdownMenu1"
@@ -19,30 +18,28 @@ function TopNav() {
                     aria-expanded="false"
                     role="button"
                   >
-                    {" "}
-                    <img src={englishIcon} alt="img" /> English{" "}
-                    <span className="caret"></span>{" "}
+                    <img src="images/English-icon.gif" alt="img" /> English
+                    <span className="caret"></span>
                   </span>
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li>
                       <a href="#">
                         <img src="images/English-icon.gif" alt="img" /> English
-                      </a>{" "}
+                      </a>
                     </li>
                     <li>
                       <a href="#">
                         <img src="images/French-icon.gif" alt="img" /> French
-                      </a>{" "}
+                      </a>
                     </li>
                     <li>
                       <a href="#">
                         <img src="images/German-icon.gif" alt="img" /> German
-                      </a>{" "}
+                      </a>
                     </li>
                   </ul>
                 </li>
                 <li className="currency dropdown">
-                  {" "}
                   <span
                     className="dropdown-toggle"
                     id="dropdownMenu12"
@@ -51,8 +48,7 @@ function TopNav() {
                     aria-expanded="false"
                     role="button"
                   >
-                    {" "}
-                    USD <span className="caret"></span>{" "}
+                    USD <span className="caret"></span>
                   </span>
                   <ul
                     className="dropdown-menu"
@@ -74,13 +70,13 @@ function TopNav() {
             <div className="col-sm-6">
               <ul className="header-top-right text-right">
                 <li className="account">
-                  <a href="login.html">My Account</a>
+                  <Link to="/login">My Account</Link>
                 </li>
                 <li className="sitemap">
                   <a href="#">Sitemap</a>
                 </li>
                 <li className="cart">
-                  <a href="cart_page.html">My Cart</a>
+                  <Link to="/cart">My Cart</Link>
                 </li>
               </ul>
             </div>

@@ -11,14 +11,13 @@ function RightColAboutWidget() {
           <div className="panel panel-default pull-left">
             <div className="panel-heading">
               <h4 className="panel-title">
-                {" "}
                 <a
                   data-toggle="collapse"
                   data-parent="#accordion"
                   href="#collapseOne"
                 >
                   1. What is HTML?
-                </a>{" "}
+                </a>
               </h4>
             </div>
             <div id="collapseOne" className="panel-collapse collapse in">
@@ -35,14 +34,13 @@ function RightColAboutWidget() {
           <div className="panel panel-default pull-left">
             <div className="panel-heading">
               <h4 className="panel-title">
-                {" "}
                 <a
                   data-toggle="collapse"
                   data-parent="#accordion"
                   href="#collapseTwo"
                 >
                   2. What is Bootstrap?
-                </a>{" "}
+                </a>
               </h4>
             </div>
             <div id="collapseTwo" className="panel-collapse collapse">
@@ -59,14 +57,13 @@ function RightColAboutWidget() {
           <div className="panel panel-default pull-left">
             <div className="panel-heading">
               <h4 className="panel-title">
-                {" "}
                 <a
                   data-toggle="collapse"
                   data-parent="#accordion"
                   href="#collapseThree"
                 >
                   3. What is CSS?
-                </a>{" "}
+                </a>
               </h4>
             </div>
             <div id="collapseThree" className="panel-collapse collapse">
@@ -96,11 +93,10 @@ function RightColAboutWidget() {
               aria-valuemax="100"
               style={{ width: "60%" }}
             >
-              {" "}
-              <span className="sr-only">60% Complete</span>{" "}
+              <span className="sr-only">60% Complete</span>
             </div>
-            <span className="progress-type">HTML / HTML5</span>{" "}
-            <span className="progress-completed">60%</span>{" "}
+            <span className="progress-type">HTML / HTML5</span>
+            <span className="progress-completed">60%</span>
           </div>
           <div className="progress">
             <div
@@ -111,11 +107,10 @@ function RightColAboutWidget() {
               aria-valuemax="100"
               style={{ width: "40%" }}
             >
-              {" "}
-              <span className="sr-only">40% Complete (success)</span>{" "}
+              <span className="sr-only">40% Complete (success)</span>
             </div>
-            <span className="progress-type">ASP.Net</span>{" "}
-            <span className="progress-completed">40%</span>{" "}
+            <span className="progress-type">ASP.Net</span>
+            <span className="progress-completed">40%</span>
           </div>
           <div className="progress">
             <div
@@ -126,11 +121,10 @@ function RightColAboutWidget() {
               aria-valuemax="100"
               style={{ width: "20%" }}
             >
-              {" "}
-              <span className="sr-only">20% Complete (info)</span>{" "}
+              <span className="sr-only">20% Complete (info)</span>
             </div>
-            <span className="progress-type">Java</span>{" "}
-            <span className="progress-completed">20%</span>{" "}
+            <span className="progress-type">Java</span>
+            <span className="progress-completed">20%</span>
           </div>
           <div className="progress">
             <div
@@ -141,11 +135,10 @@ function RightColAboutWidget() {
               aria-valuemax="100"
               style={{ width: "60%" }}
             >
-              {" "}
-              <span className="sr-only">60% Complete (warning)</span>{" "}
+              <span className="sr-only">60% Complete (warning)</span>
             </div>
-            <span className="progress-type">JavaScript / jQuery</span>{" "}
-            <span className="progress-completed">60%</span>{" "}
+            <span className="progress-type">JavaScript / jQuery</span>
+            <span className="progress-completed">60%</span>
           </div>
           <div className="progress">
             <div
@@ -156,11 +149,10 @@ function RightColAboutWidget() {
               aria-valuemax="100"
               style={{ width: "80%" }}
             >
-              {" "}
-              <span className="sr-only">80% Complete (danger)</span>{" "}
+              <span className="sr-only">80% Complete (danger)</span>
             </div>
-            <span className="progress-type">CSS / CSS3</span>{" "}
-            <span className="progress-completed">80%</span>{" "}
+            <span className="progress-type">CSS / CSS3</span>
+            <span className="progress-completed">80%</span>
           </div>
         </div>
       </div>

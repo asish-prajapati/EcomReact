@@ -13,22 +13,20 @@ function LeftColTopProducts() {
             <div className="product-list col-xs-4">
               <div className="product-thumb">
                 <div className="image product-imageblock">
-                  {" "}
                   <a href="product_detail_page.html">
-                    {" "}
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product4.jpg"
-                    />{" "}
+                    />
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product4-1.jpg"
-                    />{" "}
-                  </a>{" "}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -40,27 +38,26 @@ function LeftColTopProducts() {
                   </a>
                 </h6>
                 <div className="rating">
-                  {" "}
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-x"></i>
-                  </span>{" "}
+                  </span>
                 </div>
                 <span className="price">
                   <span className="amount">
@@ -74,22 +71,20 @@ function LeftColTopProducts() {
             <div className="product-list col-xs-4">
               <div className="product-thumb">
                 <div className="image product-imageblock">
-                  {" "}
                   <a href="product_detail_page.html">
-                    {" "}
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product1.jpg"
-                    />{" "}
+                    />
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product1-1.jpg"
-                    />{" "}
-                  </a>{" "}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -101,27 +96,26 @@ function LeftColTopProducts() {
                   </a>
                 </h6>
                 <div className="rating">
-                  {" "}
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-x"></i>
-                  </span>{" "}
+                  </span>
                 </div>
                 <span className="price">
                   <span className="amount">
@@ -135,22 +129,20 @@ function LeftColTopProducts() {
             <div className="product-list col-xs-4">
               <div className="product-thumb">
                 <div className="image product-imageblock">
-                  {" "}
                   <a href="product_detail_page.html">
-                    {" "}
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product2.jpg"
-                    />{" "}
+                    />
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product2-1.jpg"
-                    />{" "}
-                  </a>{" "}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -162,27 +154,26 @@ function LeftColTopProducts() {
                   </a>
                 </h6>
                 <div className="rating">
-                  {" "}
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-x"></i>
-                  </span>{" "}
+                  </span>
                 </div>
                 <span className="price">
                   <span className="amount">
@@ -198,22 +189,20 @@ function LeftColTopProducts() {
             <div className="product-list col-xs-4">
               <div className="product-thumb">
                 <div className="image product-imageblock">
-                  {" "}
                   <a href="product_detail_page.html">
-                    {" "}
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product3.jpg"
-                    />{" "}
+                    />
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product3-1.jpg"
-                    />{" "}
-                  </a>{" "}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -225,27 +214,26 @@ function LeftColTopProducts() {
                   </a>
                 </h6>
                 <div className="rating">
-                  {" "}
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-x"></i>
-                  </span>{" "}
+                  </span>
                 </div>
                 <span className="price">
                   <span className="amount">
@@ -259,22 +247,20 @@ function LeftColTopProducts() {
             <div className="product-list col-xs-4">
               <div className="product-thumb">
                 <div className="image product-imageblock">
-                  {" "}
                   <a href="product_detail_page.html">
-                    {" "}
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product5.jpg"
-                    />{" "}
+                    />
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product5-1.jpg"
-                    />{" "}
-                  </a>{" "}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -286,27 +272,26 @@ function LeftColTopProducts() {
                   </a>
                 </h6>
                 <div className="rating">
-                  {" "}
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-x"></i>
-                  </span>{" "}
+                  </span>
                 </div>
                 <span className="price">
                   <span className="amount">
@@ -320,22 +305,20 @@ function LeftColTopProducts() {
             <div className="product-list col-xs-4">
               <div className="product-thumb">
                 <div className="image product-imageblock">
-                  {" "}
                   <a href="product_detail_page.html">
-                    {" "}
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product6.jpg"
-                    />{" "}
+                    />
                     <img
                       className="img-responsive"
                       title="iPod classNameic"
                       alt="iPod classNameic"
                       src="images/product/product6-1.jpg"
-                    />{" "}
-                  </a>{" "}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -347,27 +330,26 @@ function LeftColTopProducts() {
                   </a>
                 </h6>
                 <div className="rating">
-                  {" "}
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-1x"></i>
-                  </span>{" "}
+                  </span>
                   <span className="fa fa-stack">
                     <i className="fa fa-star-o fa-stack-1x"></i>
                     <i className="fa fa-star fa-stack-x"></i>
-                  </span>{" "}
+                  </span>
                 </div>
                 <span className="price">
                   <span className="amount">

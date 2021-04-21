@@ -7,20 +7,19 @@ function RightColReviews() {
         <div id="exTab5" className="mtb_30">
           <ul className="nav nav-tabs">
             <li className="active">
-              {" "}
               <a href="#1c" data-toggle="tab">
                 Overview
-              </a>{" "}
+              </a>
             </li>
             <li>
               <a href="#2c" data-toggle="tab">
                 Reviews (1)
-              </a>{" "}
+              </a>
             </li>
             <li>
               <a href="#3c" data-toggle="tab">
                 Solution
-              </a>{" "}
+              </a>
             </li>
           </ul>
           <div className="tab-content mt_20">

@@ -10,11 +10,9 @@ function MainFooter() {
             <div className="content_footercms_right">
               <div className="footer-contact">
                 <div className="footer-logo mb_40">
-                  {" "}
                   <a href="index-2.html">
-                    {" "}
-                    <img src="images/footer-logo.png" alt="HealthCare" />{" "}
-                  </a>{" "}
+                    <img src="images/footer-logo.png" alt="HealthCare" />
+                  </a>
                 </div>
                 <ul>
                   <li>B-14 Collins Street West Victoria 2386</li>
@@ -125,7 +123,7 @@ function MainFooter() {
           <div className="col-md-3">
             <h6 className="ptb_20">SIGN UP OUR NEWSLETTER</h6>
             <p className="mt_10 mb_20">
-              For get offers from our favorite brands & get 20% off for next{" "}
+              For get offers from our favorite brands & get 20% off for next
             </p>
             <div className="form-group">
               <input

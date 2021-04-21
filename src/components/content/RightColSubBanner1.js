@@ -6,7 +6,6 @@ function RightColSubBanner1() {
       <div className="cms_banner mt_10">
         <div className="col-xs-6 col-sm-12 col-md-6 mt_20">
           <div id="subbanner1" className="sub-hover">
-            {" "}
             <a href="#">
               <img
                 src="images/sub1.jpg"
@@ -22,7 +21,6 @@ function RightColSubBanner1() {
         </div>
         <div className="col-xs-6 col-sm-12 col-md-6 mt_20">
           <div id="subbanner2" className="sub-hover">
-            {" "}
             <a href="#">
               <img
                 src="images/sub2.jpg"

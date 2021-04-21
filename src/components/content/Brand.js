@@ -1,6 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
+// import $ from "jquery";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel";
+
+// const brandCarousel = () => {
+//   $(".brand").owlCarousel({
+//     loop: true,
+//     autoplay: true,
+//     responsiveClass: true,
+//     items: 6, //10 items above 1000px browser width
+//     responsive: {
+//       0: {
+//         items: 1,
+//         nav: true,
+//       },
+//       400: {
+//         items: 2,
+//         nav: true,
+//       },
+//       600: {
+//         items: 3,
+//         nav: true,
+//       },
+//       1000: {
+//         items: 6,
+//         nav: true,
+//         loop: true,
+//       },
+//     },
+//   });
+// };
 
 function Brand() {
+  // useEffect(() => {
+  //   brandCarousel();
+  // }, []);
   return (
     <div id="brand_carouse" className="ptb_30 text-center">
       <div className="type-01">

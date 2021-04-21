@@ -3,7 +3,6 @@ import React from "react";
 function RightColContactUs() {
   return (
     <>
-      {/* // <!-- contact  --> */}
       <div className="row">
         <div className="col-md-4 col-xs-12 contact">
           <div className="location mb_50">
@@ -21,7 +20,7 @@ function RightColContactUs() {
             <h5 className="capitalize mb_20">Careers</h5>
             <div className="address">
               dummy text ever since the 1500s, simply dummy text of the
-              typesetting industry.{" "}
+              typesetting industry.
             </div>
             <div className="email mt_10">
               <i className="fa fa-envelope" aria-hidden="true"></i>

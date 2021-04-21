@@ -3,17 +3,6 @@ import React from "react";
 function RightColCart() {
   return (
     <>
-      {/* <!-- =====  BANNER STRAT  ===== --> */}
-      <div className="breadcrumb ptb_20">
-        <h1>Shopping Cart</h1>
-        <ul>
-          <li>
-            <a href="index-2.html">Home</a>
-          </li>
-          <li className="active">Shopping Cart</li>
-        </ul>
-      </div>
-      {/* <!-- =====  BREADCRUMB END===== --> */}
       <form enctype="multipart/form-data" method="post" action="#">
         <div className="table-responsive">
           <table className="table table-bordered">

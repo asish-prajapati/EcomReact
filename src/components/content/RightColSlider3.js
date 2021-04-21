@@ -1,11 +1,5 @@
 import React from "react";
 // import OwlCarousel from "react-owl-carousel";
-import product5 from "../../images/product/product5.jpg";
-import product51 from "../../images/product/product5-1.jpg";
-import product1 from "../../images/product/product1.jpg";
-import product11 from "../../images/product/product1-1.jpg";
-import product3 from "../../images/product/product3.jpg";
-import product31 from "../../images/product/product3-1.jpg";
 
 function RightColSlider3() {
   return (

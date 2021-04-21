@@ -15,23 +15,21 @@ function RightColRelatedProducts() {
           <div className="item">
             <div className="product-thumb">
               <div className="image product-imageblock">
-                {" "}
                 <a href="product_detail_page.html">
-                  {" "}
                   <img
                     data-name="product_image"
                     src="images/product/product2.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
+                  />
                   <img
                     src="images/product/product2-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
-                </a>{" "}
+                  />
+                </a>
               </div>
               <div className="caption product-detail text-left">
                 <h6 data-name="product_name" className="product-name mt_20">
@@ -94,23 +92,21 @@ function RightColRelatedProducts() {
           <div className="item">
             <div className="product-thumb">
               <div className="image product-imageblock">
-                {" "}
                 <a href="product_detail_page.html">
-                  {" "}
                   <img
                     data-name="product_image"
                     src="images/product/product3.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
+                  />
                   <img
                     src="images/product/product3-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
-                </a>{" "}
+                  />
+                </a>
               </div>
               <div className="caption product-detail text-left">
                 <h6 data-name="product_name" className="product-name mt_20">
@@ -173,23 +169,21 @@ function RightColRelatedProducts() {
           <div className="item">
             <div className="product-thumb">
               <div className="image product-imageblock">
-                {" "}
                 <a href="product_detail_page.html">
-                  {" "}
                   <img
                     data-name="product_image"
                     src="images/product/product4.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
+                  />
                   <img
                     src="images/product/product4-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
-                </a>{" "}
+                  />
+                </a>
               </div>
               <div className="caption product-detail text-left">
                 <h6 data-name="product_name" className="product-name mt_20">
@@ -252,23 +246,21 @@ function RightColRelatedProducts() {
           <div className="item">
             <div className="product-thumb">
               <div className="image product-imageblock">
-                {" "}
                 <a href="product_detail_page.html">
-                  {" "}
                   <img
                     data-name="product_image"
                     src="images/product/product6.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
+                  />
                   <img
                     src="images/product/product6-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
-                </a>{" "}
+                  />
+                </a>
               </div>
               <div className="caption product-detail text-left">
                 <h6 data-name="product_name" className="product-name mt_20">
@@ -331,23 +323,21 @@ function RightColRelatedProducts() {
           <div className="item">
             <div className="product-thumb">
               <div className="image product-imageblock">
-                {" "}
                 <a href="product_detail_page.html">
-                  {" "}
                   <img
                     data-name="product_image"
                     src="images/product/product7.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
+                  />
                   <img
                     src="images/product/product7-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
-                </a>{" "}
+                  />
+                </a>
               </div>
               <div className="caption product-detail text-left">
                 <h6 data-name="product_name" className="product-name mt_20">
@@ -410,23 +400,21 @@ function RightColRelatedProducts() {
           <div className="item">
             <div className="product-thumb">
               <div className="image product-imageblock">
-                {" "}
                 <a href="product_detail_page.html">
-                  {" "}
                   <img
                     data-name="product_image"
                     src="images/product/product8.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
+                  />
                   <img
                     src="images/product/product8-1.jpg"
                     alt="iPod classNameic"
                     title="iPod classNameic"
                     className="img-responsive"
-                  />{" "}
-                </a>{" "}
+                  />
+                </a>
               </div>
               <div className="caption product-detail text-left">
                 <h6 data-name="product_name" className="product-name mt_20">

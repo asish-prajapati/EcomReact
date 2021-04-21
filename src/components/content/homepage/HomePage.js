@@ -10,8 +10,8 @@ import RightColSubBanner3 from "../RightColSubBanner3";
 import LeftColCategory from "../LeftColCategory";
 import LeftColTopProducts from "../LeftColTopProducts";
 import LeftColWidget from "../LeftColWidget";
-import left1 from "../../../images/left1.jpg";
-import left2 from "../../../images/left2.jpg";
+import LeftColBanner1 from "../LeftColBanner1";
+import LeftColBanner2 from "../LeftColBanner2";
 import LeftColTestimonial from "../LeftColTestimonial";
 import LeftColTag from "../LeftColTag";
 
@@ -21,18 +21,10 @@ function HomePage() {
       <div className="row">
         <div id="column-left" className="col-sm-4 col-md-4 col-lg-3 ">
           <LeftColCategory />
-          <div className="left_banner left-sidebar-widget mt_30 mb_50">
-            <a href="#">
-              <img src={left1} alt="Left Banner" className="img-responsive" />
-            </a>
-          </div>
+          <LeftColBanner1 />
           <LeftColWidget />
           <LeftColTopProducts />
-          <div className="left_banner left-sidebar-widget mb_50">
-            <a href="#">
-              <img src={left2} alt="Left Banner" className="img-responsive" />
-            </a>
-          </div>
+          <LeftColBanner2 />
           <LeftColTestimonial />
           <LeftColTag />
         </div>

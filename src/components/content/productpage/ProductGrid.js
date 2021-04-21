@@ -1,22 +1,10 @@
 import React from "react";
-import product1 from "../../../images/product/product1.jpg";
-import product11 from "../../../images/product/product1-1.jpg";
+
 var arr16 = Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
 
 function ProductGrid() {
   return (
     <>
-      {/* <!-- =====  BANNER STRAT  ===== --> */}
-      <div className="breadcrumb ptb_20">
-        <h1>Products</h1>
-        <ul>
-          <li>
-            <a href="index-2.html">Home</a>
-          </li>
-          <li className="active">Products</li>
-        </ul>
-      </div>
-      {/* <!-- =====  BREADCRUMB END===== --> */}
       <div className="category-page-wrapper mb_30">
         <div className="col-xs-6 sort-wrapper">
           <label className="control-label" for="input-sort">
@@ -84,13 +72,13 @@ function ProductGrid() {
                   <a href="product_detail_page.html">
                     <img
                       data-name="product_image"
-                      src={product1}
+                      src="images/product/product1"
                       alt="iPod classNameic"
                       title="iPod classNameic"
                       className="img-responsive"
                     />
                     <img
-                      src={product11}
+                      src="images/product/product1-1"
                       alt="iPod classNameic"
                       title="iPod classNameic"
                       className="img-responsive"

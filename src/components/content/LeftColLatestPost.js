@@ -12,21 +12,18 @@ function LeftColLatestPost() {
             <div className="post-format col-xs-4">
               <div className="thumb post-img">
                 <a href="single_blog.html">
-                  {" "}
                   <img src="images/blog/blog_img_01.jpg" alt="HealthCare" />
                 </a>
               </div>
             </div>
-            <div className="post-info col-xs-8 ">
+            <div className="post-info col -xs-8 ">
               <h5>
-                {" "}
                 <a href="single_blog.html">
                   Unknown printer took a galley book.
-                </a>{" "}
+                </a>
               </h5>
               <div className="date pull-left">
-                {" "}
-                <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017{" "}
+                <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017
               </div>
             </div>
           </div>
@@ -34,21 +31,18 @@ function LeftColLatestPost() {
             <div className="post-format col-xs-4">
               <div className="thumb post-img">
                 <a href="single_blog.html">
-                  {" "}
                   <img src="images/blog/blog_img_02.jpg" alt="HealthCare" />
                 </a>
               </div>
             </div>
             <div className="post-info col-xs-8 ">
               <h5>
-                {" "}
                 <a href="single_blog.html">
                   Unknown printer took a galley book.
-                </a>{" "}
+                </a>
               </h5>
               <div className="date pull-left">
-                {" "}
-                <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017{" "}
+                <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017
               </div>
             </div>
           </div>
@@ -56,21 +50,18 @@ function LeftColLatestPost() {
             <div className="post-format col-xs-4">
               <div className="thumb post-img">
                 <a href="single_blog.html">
-                  {" "}
                   <img src="images/blog/blog_img_03.jpg" alt="HealthCare" />
                 </a>
               </div>
             </div>
             <div className="post-info col-xs-8 ">
               <h5>
-                {" "}
                 <a href="single_blog.html">
                   Unknown printer took a galley book.
-                </a>{" "}
+                </a>
               </h5>
               <div className="date pull-left">
-                {" "}
-                <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017{" "}
+                <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017
               </div>
             </div>
           </div>

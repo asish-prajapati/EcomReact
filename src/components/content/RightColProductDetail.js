@@ -6,7 +6,6 @@ function RightColProductDetail() {
       <div className="col-md-6">
         <div>
           <a className="thumbnails">
-            {" "}
             <img
               data-name="product_image"
               src="images/product/product1.jpg"
@@ -22,7 +21,6 @@ function RightColProductDetail() {
                 href="images/product/product1.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product1.jpg" alt="" />
               </a>
             </div>
@@ -34,7 +32,6 @@ function RightColProductDetail() {
                 href="images/product/product2.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product2.jpg" alt="" />
               </a>
             </div>
@@ -46,7 +43,6 @@ function RightColProductDetail() {
                 href="images/product/product3.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product3.jpg" alt="" />
               </a>
             </div>
@@ -58,7 +54,6 @@ function RightColProductDetail() {
                 href="images/product/product4.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product4.jpg" alt="" />
               </a>
             </div>
@@ -70,7 +65,6 @@ function RightColProductDetail() {
                 href="images/product/product5.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product5.jpg" alt="" />
               </a>
             </div>
@@ -82,7 +76,6 @@ function RightColProductDetail() {
                 href="images/product/product6.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product6.jpg" alt="" />
               </a>
             </div>
@@ -94,7 +87,6 @@ function RightColProductDetail() {
                 href="images/product/product7.jpg"
                 data-fancybox="group1"
               >
-                {" "}
                 <img src="images/product/product7.jpg" alt="" />
               </a>
             </div>
@@ -139,7 +131,6 @@ function RightColProductDetail() {
           <li>
             <label>Brand:</label>
             <span>
-              {" "}
               <a href="#">Apple</a>
             </span>
           </li>
@@ -154,7 +145,6 @@ function RightColProductDetail() {
         </ul>
         <hr />
         <p className="product-desc mtb_30">
-          {" "}
           More room to move. With 80GB or 160GB of storage and up to 40 hours of
           battery life, the new iPod classNameic lets you enjoy up to 40,000
           songs or up to 200 hours of video or any combination wherever you go.

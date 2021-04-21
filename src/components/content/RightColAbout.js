@@ -5,8 +5,7 @@ function RightColAbout() {
     <div className="row">
       <div className="col-md-12">
         <figure>
-          {" "}
-          <img src="images/about-page-gaando.jpg" alt="#" />{" "}
+          <img src="images/about-page-gaando.jpg" alt="#" />
         </figure>
       </div>
       <div className="col-md-12">

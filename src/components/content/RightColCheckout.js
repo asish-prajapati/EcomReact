@@ -1,24 +1,13 @@
 import React from "react";
+import Breadcrumb from "./Breadcrumb";
 
 function RightColCheckout() {
   return (
     <>
-      {/* <!-- =====  BANNER STRAT  ===== --> */}
-      <div className="breadcrumb ptb_20">
-        <h1>Shopping Cart</h1>
-        <ul>
-          <li>
-            <a href="index-2.html">Home</a>
-          </li>
-          <li className="active">Shopping Cart</li>
-        </ul>
-      </div>
-      {/* <!-- =====  BREADCRUMB END===== --> */}
       <div className="panel-group mt_20" id="accordion">
         <div className="panel panel-default  ">
           <div className="panel-heading">
             <h4 className="panel-title">
-              {" "}
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
@@ -41,7 +30,7 @@ function RightColCheckout() {
                         checked="checked"
                         value="register"
                         name="account"
-                      />{" "}
+                      />
                       Register Account
                     </label>
                   </div>
@@ -111,14 +100,13 @@ function RightColCheckout() {
         <div className="panel panel-default ">
           <div className="panel-heading">
             <h4 className="panel-title">
-              {" "}
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapseTwo"
               >
                 Step 2: Billing Details <i className="fa fa-caret-down"></i>
-              </a>{" "}
+              </a>
             </h4>
           </div>
           <div id="collapseTwo" className="panel-collapse collapse">
@@ -132,7 +120,7 @@ function RightColCheckout() {
                       value="existing"
                       name="payment_address"
                       data-id="payment-existing"
-                    />{" "}
+                    />
                     I want to use an existing address
                   </label>
                 </div>
@@ -150,7 +138,7 @@ function RightColCheckout() {
                       value="new"
                       name="payment_address"
                       data-id="payment-new"
-                    />{" "}
+                    />
                     I want to use a new address
                   </label>
                 </div>
@@ -630,14 +618,13 @@ function RightColCheckout() {
         <div className="panel panel-default ">
           <div className="panel-heading">
             <h4 className="panel-title">
-              {" "}
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapseThree"
               >
                 Step 3: Delivery Details <i className="fa fa-caret-down"></i>
-              </a>{" "}
+              </a>
             </h4>
           </div>
           <div id="collapseThree" className="panel-collapse collapse">
@@ -650,7 +637,7 @@ function RightColCheckout() {
                       checked="checked"
                       value="existing"
                       name="shipping_address"
-                    />{" "}
+                    />
                     I want to use an existing address
                   </label>
                 </div>
@@ -1143,14 +1130,13 @@ function RightColCheckout() {
         <div className="panel panel-default ">
           <div className="panel-heading">
             <h4 className="panel-title">
-              {" "}
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapsefour"
               >
                 Step 4: Delivery Method <i className="fa fa-caret-down"></i>
-              </a>{" "}
+              </a>
             </h4>
           </div>
           <div id="collapsefour" className="panel-collapse collapse">
@@ -1169,7 +1155,7 @@ function RightColCheckout() {
                     checked="checked"
                     value="flat.flat"
                     name="shipping_method"
-                  />{" "}
+                  />
                   Flat Shipping Rate - $5.00
                 </label>
               </div>
@@ -1200,14 +1186,13 @@ function RightColCheckout() {
         <div className="panel panel-default ">
           <div className="panel-heading">
             <h4 className="panel-title">
-              {" "}
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapsefive"
               >
                 Step 5: Payment Method <i className="fa fa-caret-down"></i>
-              </a>{" "}
+              </a>
             </h4>
           </div>
           <div id="collapsefive" className="panel-collapse collapse">
@@ -1222,8 +1207,8 @@ function RightColCheckout() {
                     checked="checked"
                     value="cod"
                     name="payment_method"
-                  />{" "}
-                  Cash On Delivery{" "}
+                  />
+                  Cash On Delivery
                 </label>
               </div>
               <p>
@@ -1238,7 +1223,7 @@ function RightColCheckout() {
               </p>
               <div className="buttons">
                 <div className="pull-right mt_20">
-                  I have read and agree to the{" "}
+                  I have read and agree to the
                   <a className="agree" href="#">
                     <b>Terms &amp; Conditions</b>
                   </a>
@@ -1258,14 +1243,13 @@ function RightColCheckout() {
         <div className="panel panel-default ">
           <div className="panel-heading">
             <h4 className="panel-title">
-              {" "}
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapsesix"
               >
                 Step 6: Confirm Order <i className="fa fa-caret-down"></i>
-              </a>{" "}
+              </a>
             </h4>
           </div>
           <div id="collapsesix" className="panel-collapse collapse">

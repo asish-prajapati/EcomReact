@@ -3,40 +3,21 @@ import React from "react";
 function RightColSingleBlog() {
   return (
     <>
-      {/* // <!-- =====  BANNER STRAT  ===== --> */}
-      <div className="breadcrumb ptb_20">
-        <h1>Fashions fade..</h1>
-        <ul>
-          <li>
-            <a href="index-2.html">Home</a>
-          </li>
-          <li>
-            <a href="blog_page.html">Home</a>
-          </li>
-          <li className="active">Fashions fade....</li>
-        </ul>
-      </div>
-      {/* // <!-- =====  BREADCRUMB END===== --> */}
       <div className="row">
         <div className="blog-item listing-effect col-md-12 mb_50">
           <div className="post-format">
             <div className="thumb post-img">
               <a href="images/blog/blog_img_01.jpg" title="Beautiful Lady">
-                {" "}
                 <img src="images/blog/blog_img_01.jpg" alt="HealthCare" />
               </a>
             </div>
             <div className="post-type">
-              {" "}
-              <i className="fa fa-picture-o" aria-hidden="true"></i>{" "}
+              <i className="fa fa-picture-o" aria-hidden="true"></i>
             </div>
           </div>
           <div className="post-info mtb_20 ">
             <h2 className="mb_10">
-              {" "}
-              <a href="single_blog.html">
-                Unknown printer took a galley book.
-              </a>{" "}
+              <a href="single_blog.html">Unknown printer took a galley book.</a>
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -52,7 +33,7 @@ function RightColSingleBlog() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repudiandae provident minus similique porro assumenda illo dolore
               ducimus vero ipsum illum ipsa velit, deleniti accusantium repellat
-              facilis tempora ab{" "}
+              facilis tempora ab
             </p>
           </div>
           <blockquote>
@@ -75,15 +56,13 @@ function RightColSingleBlog() {
           amet, consectet
           <div className="details mtb_20">
             <div className="date">
-              {" "}
-              <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017{" "}
+              <i className="fa fa-calendar" aria-hidden="true"></i>11 May 2017
             </div>
           </div>
           <div className="author-about mt_50">
             <h3 className="author-about-title">About the Author</h3>
             <div className="author mtb_30">
               <div className="author-avatar">
-                {" "}
                 <img alt="" src="images/user1.jpg" />
               </div>
               <div className="author-body">
@@ -106,22 +85,19 @@ function RightColSingleBlog() {
                 <hr />
                 <article className="comment-body mtb_30">
                   <div className="comment-avatar">
-                    {" "}
-                    <img alt="" src="images/user2.jpg" />{" "}
+                    <img alt="" src="images/user2.jpg" />
                   </div>
                   <div className="comment-main">
                     <h5 className="author-name">
-                      {" "}
                       <a href="#" className="comment-name">
                         Radley Lobortis
-                      </a>{" "}
-                      <small className="comment-date">8 months ago</small>{" "}
+                      </a>
+                      <small className="comment-date">8 months ago</small>
                     </h5>
                     <div className="comment-reply pull-right">
-                      {" "}
                       <a href="#">
                         <i className="fa fa-reply" aria-hidden="true"></i> Reply
-                      </a>{" "}
+                      </a>
                     </div>
                     <div className="comment-content mt_10">
                       Sed lobortis rpi luctus. Aenean posuere nulla in
@@ -137,23 +113,20 @@ function RightColSingleBlog() {
                   <li className="comment">
                     <article className="comment-body mtb_30">
                       <div className="comment-avatar">
-                        {" "}
-                        <img alt="" src="images/user3.jpg" />{" "}
+                        <img alt="" src="images/user3.jpg" />
                       </div>
                       <div className="comment-main">
                         <h5 className="author-name">
-                          {" "}
                           <a href="#" className="comment-name">
                             Lobortis Radley
-                          </a>{" "}
-                          <small className="comment-date">1 months ago</small>{" "}
+                          </a>
+                          <small className="comment-date">1 months ago</small>
                         </h5>
                         <div className="comment-reply pull-right">
-                          {" "}
                           <a href="#">
-                            <i className="fa fa-reply" aria-hidden="true"></i>{" "}
+                            <i className="fa fa-reply" aria-hidden="true"></i>
                             Reply
-                          </a>{" "}
+                          </a>
                         </div>
                         <div className="comment-content mt_10">
                           Dcenas euismod faucibus dolor a finibus.Maecenas
@@ -171,22 +144,19 @@ function RightColSingleBlog() {
                 <hr />
                 <article className="comment-body mtb_30">
                   <div className="comment-avatar">
-                    {" "}
-                    <img alt="" src="images/user1.jpg" />{" "}
+                    <img alt="" src="images/user1.jpg" />
                   </div>
                   <div className="comment-main">
                     <h5 className="author-name">
-                      {" "}
                       <a href="#" className="comment-name">
-                        Sradle Vivamus{" "}
-                      </a>{" "}
-                      <small className="comment-date">8 days ago</small>{" "}
+                        Sradle Vivamus
+                      </a>
+                      <small className="comment-date">8 days ago</small>
                     </h5>
                     <div className="comment-reply pull-right">
-                      {" "}
                       <a href="#">
                         <i className="fa fa-reply" aria-hidden="true"></i> Reply
-                      </a>{" "}
+                      </a>
                     </div>
                     <div className="comment-content mt_10">
                       Vivamus imperdiet ex sed lobortis luctus. Aenean posuere
