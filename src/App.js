@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/header/Header";
@@ -15,13 +15,72 @@ import AboutPage from "./components/content/aboutpage/AboutPage";
 import LoginPage from "./components/content/loginpage/LoginPage";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+  const [glogin, setGlogin] = useState(false);
+
+  useEffect(() => {
+    window.fbAsyncInit = function () {
+      window.FB.init({
+        appId: "1057236748096613",
+        cookie: true,
+        xfbml: true,
+        version: "v10.0",
+      });
+
+      window.FB.getLoginStatus(function (response) {
+        statusChangeCallback(response);
+      });
+    };
+  }, []);
+
+  function statusChangeCallback(response) {
+    if (response.status === "connected") {
+      setLoggedIn(true);
+      setGlogin(false);
+      window.FB.api("/me", function (response) {
+        setUsername(response.name);
+      });
+    } else {
+      setLoggedIn(false);
+    }
+  }
+
+  function loginHandler() {
+    window.FB.login(
+      function (response) {
+        statusChangeCallback(response);
+      },
+      { scope: "public_profile,email" }
+    );
+  }
+  function logoutHandler() {
+    window.FB.logout((response) => {
+      statusChangeCallback(response);
+    });
+  }
+  const googleLoginHandler = (response) => {
+    setLoggedIn(true);
+    setGlogin(true);
+    setUsername(response.profileObj.name);
+  };
+  const googleLogoutHandler = (response) => {
+    setLoggedIn(false);
+  };
+
   return (
     <>
       {/* <!-- =====  LODER  ===== --> */}
-      <div class="loder"></div>
+      {/* <div class="loder"></div> */}
       <div className="wrapper">
         <Router>
-          <Header />
+          <Header
+            loggedIn={loggedIn}
+            glogin={glogin}
+            username={username}
+            logoutHandler={logoutHandler}
+            googleLogoutHandler={googleLogoutHandler}
+          />
           <Switch>
             <Route exact path="/">
               <HomePage />
@@ -51,7 +110,11 @@ function App() {
               <AboutPage />
             </Route>
             <Route exact path="/login">
-              <LoginPage />
+              <LoginPage
+                loginHandler={loginHandler}
+                googleLoginHandler={googleLoginHandler}
+                loggedIn={loggedIn}
+              />
             </Route>
           </Switch>
           <MainFooter />

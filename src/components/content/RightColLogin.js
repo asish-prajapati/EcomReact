@@ -1,6 +1,10 @@
 import React from "react";
+import { GoogleLogin, GoogleLogout } from "react-google-login";
 
-function RightColLogin() {
+function RightColLogin(props) {
+  function submitHandler(e) {
+    e.preventDefault();
+  }
   return (
     <div className="row">
       <div className="col-md-6 col-md-offset-3">
@@ -8,14 +12,12 @@ function RightColLogin() {
           <div className="panel-heading">
             <div className="row mb_20">
               <div className="col-xs-6">
-                <a href="#" className="active" id="login-form-link">
+                <a className="active" id="login-form-link">
                   Login
                 </a>
               </div>
               <div className="col-xs-6">
-                <a href="#" id="register-form-link">
-                  Register
-                </a>
+                <a id="register-form-link">Register</a>
               </div>
             </div>
             <hr />
@@ -23,7 +25,8 @@ function RightColLogin() {
           <div className="panel-body">
             <div className="row">
               <div className="col-lg-12">
-                <form id="login-form" action="#" method="post">
+                {/* formtag */}
+                <form id="login-form" onSubmit={submitHandler}>
                   <div className="form-group">
                     <input
                       type="text"
@@ -65,6 +68,25 @@ function RightColLogin() {
                           tabindex="4"
                           className="form-control btn btn-login"
                           value="Log In"
+                        />{" "}
+                        <br /> <br />
+                        <button
+                          tabindex="4"
+                          className="form-control btn"
+                          style={{ backgroundColor: "blue" }}
+                          onClick={props.loginHandler}
+                        >
+                          Login with Facebook
+                        </button>
+                        <br />
+                        <br />
+                        <GoogleLogin
+                          clientId="789665118583-idmd3srqpri5r5qf0u0thgllffj7u77e.apps.googleusercontent.com"
+                          buttonText="Login"
+                          onSuccess={props.googleLoginHandler}
+                          cookiePolicy={"single_host_origin"}
+                          buttonText="Login with Google"
+                          className="form-control btn"
                         />
                       </div>
                     </div>

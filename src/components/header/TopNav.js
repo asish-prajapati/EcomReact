@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function TopNav() {
+function TopNav(props) {
+  const {
+    loggedIn,
+    glogin,
+    username,
+    logoutHandler,
+    googleLogoutHandler,
+  } = props.props;
+
   return (
     <>
       <div className="header-top">
@@ -69,9 +77,23 @@ function TopNav() {
             </div>
             <div className="col-sm-6">
               <ul className="header-top-right text-right">
-                <li className="account">
-                  <Link to="/login">My Account</Link>
-                </li>
+                {loggedIn ? (
+                  <>
+                    <li className="account">WelCome , {username}</li>
+                    <li>
+                      {glogin ? (
+                        <a onClick={googleLogoutHandler}>Logout</a>
+                      ) : (
+                        <a onClick={logoutHandler}>Logout</a>
+                      )}
+                    </li>
+                  </>
+                ) : (
+                  <li className="account">
+                    <Link to="/login">My Account</Link>
+                  </li>
+                )}
+
                 <li className="sitemap">
                   <a href="#">Sitemap</a>
                 </li>
