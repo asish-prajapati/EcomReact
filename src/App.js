@@ -60,9 +60,11 @@ function App() {
     });
   }
   const googleLoginHandler = (response) => {
-    setLoggedIn(true);
-    setGlogin(true);
-    setUsername(response.profileObj.name);
+    if (response.accessToken) {
+      setLoggedIn(true);
+      setGlogin(true);
+      setUsername(response.profileObj.name);
+    }
   };
   const googleLogoutHandler = (response) => {
     setLoggedIn(false);
@@ -111,6 +113,7 @@ function App() {
             </Route>
             <Route exact path="/login">
               <LoginPage
+                username={username}
                 loginHandler={loginHandler}
                 googleLoginHandler={googleLoginHandler}
                 loggedIn={loggedIn}

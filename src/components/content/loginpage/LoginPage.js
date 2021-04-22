@@ -4,7 +4,7 @@ import LeftColBanner1 from "../LeftColBanner1";
 import RightColLogin from "../RightColLogin";
 
 function LoginPage(props) {
-  const { loggedIn, loginHandler, googleLoginHandler } = props;
+  const { username, loggedIn, loginHandler, googleLoginHandler } = props;
   return (
     <div className="container">
       <div className="row">
@@ -14,7 +14,7 @@ function LoginPage(props) {
         </div>
         <div id="column-right" className="col-sm-8 col-md-8 col-lg-9 mtb_30">
           {loggedIn ? (
-            <h1> You are Logged In </h1>
+            <h1> Hi {username} , You are Logged In </h1>
           ) : (
             <RightColLogin
               loginHandler={loginHandler}
