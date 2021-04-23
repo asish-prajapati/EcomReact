@@ -16,7 +16,11 @@ import LoginPage from "./components/content/loginpage/LoginPage";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [username, setUsername] = useState("");
+  const [data, setData] = useState({
+    username: "",
+    profileimg: "",
+    email: "",
+  });
   const [glogin, setGlogin] = useState(false);
 
   useEffect(() => {
@@ -38,9 +42,15 @@ function App() {
     if (response.status === "connected") {
       setLoggedIn(true);
       setGlogin(false);
-      window.FB.api("/me", function (response) {
-        setUsername(response.name);
-      });
+      window.FB.api(
+        "/me",
+        // { fields: "name,email,profile_pic" },
+        // { access_token: response.accessToken },
+        function (response) {
+          setData({ ...data, username: response.name, email: response.email });
+          console.log(response);
+        }
+      );
     } else {
       setLoggedIn(false);
     }
@@ -63,7 +73,12 @@ function App() {
     if (response.accessToken) {
       setLoggedIn(true);
       setGlogin(true);
-      setUsername(response.profileObj.name);
+      setData({
+        username: response.profileObj.name,
+        profileimg: response.profileObj.imageUrl,
+        email: response.profileObj.email,
+      });
+      console.log(response.profileObj);
     }
   };
   const googleLogoutHandler = (response) => {
@@ -79,7 +94,7 @@ function App() {
           <Header
             loggedIn={loggedIn}
             glogin={glogin}
-            username={username}
+            data={data}
             logoutHandler={logoutHandler}
             googleLogoutHandler={googleLogoutHandler}
           />
@@ -113,7 +128,7 @@ function App() {
             </Route>
             <Route exact path="/login">
               <LoginPage
-                username={username}
+                data={data}
                 loginHandler={loginHandler}
                 googleLoginHandler={googleLoginHandler}
                 loggedIn={loggedIn}

@@ -1,9 +1,66 @@
-import React from "react";
-import { GoogleLogin, GoogleLogout } from "react-google-login";
+import React, { useState } from "react";
+import { GoogleLogin } from "react-google-login";
+import { Redirect } from "react-router-dom";
+import axios from "axios";
 
 function RightColLogin(props) {
-  function submitHandler(e) {
+  const [regState, setRegState] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+
+    redirectToReferrer: false,
+  });
+  const [loginState, setLoginState] = useState({ username: "", password: "" });
+  function onChangeReg(e) {
+    setRegState({ ...regState, [e.target.name]: e.target.value });
+  }
+  function onChangeLogin(e) {
+    setLoginState({ ...loginState, [e.target.name]: e.target.value });
+  }
+  function regSubmitHandler(e) {
     e.preventDefault();
+    console.log(JSON.stringify(regState));
+    localStorage.setItem("regformData", JSON.stringify(regState));
+    alert("Registered Successfully");
+
+    setRegState({ redirectToReferrer: true });
+    // axios
+    //   .post("http://imginfotech.in/sixvalley/api/v1/auth/register", {
+    //     f_name: regState.firstname,
+    //     l_name: regState.lastname,
+    //     email: regState.email,
+    //     password: regState.password,
+    //   })
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     // handle error
+    //     console.log(error);
+    //   });
+  }
+
+  function loginSubmitHandler(e) {
+    e.preventDefault();
+
+    // axios
+    //   .post("http://imginfotech.in/sixvalley/api/v1/auth/login", {
+    //     email: loginState.email,
+    //     password: loginState.password,
+    //   })
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     // handle error
+    //     console.log(error);
+    //   });
+  }
+
+  if (regState.redirectToReferrer) {
+    return <Redirect to="/" />;
   }
   return (
     <div className="row">
@@ -26,7 +83,7 @@ function RightColLogin(props) {
             <div className="row">
               <div className="col-lg-12">
                 {/* formtag */}
-                <form id="login-form" onSubmit={submitHandler}>
+                <form id="login-form" onSubmit={loginSubmitHandler}>
                   <div className="form-group">
                     <input
                       type="text"
@@ -35,7 +92,8 @@ function RightColLogin(props) {
                       tabindex="1"
                       className="form-control"
                       placeholder="Username"
-                      value=""
+                      value={loginState.username}
+                      onChange={onChangeLogin}
                     />
                   </div>
                   <div className="form-group">
@@ -46,9 +104,11 @@ function RightColLogin(props) {
                       tabindex="2"
                       className="form-control"
                       placeholder="Password"
+                      value={loginState.password}
+                      onChange={onChangeLogin}
                     />
                   </div>
-                  <div className="form-group text-center">
+                  {/* <div className="form-group text-center">
                     <input
                       type="checkbox"
                       tabindex="3"
@@ -57,7 +117,7 @@ function RightColLogin(props) {
                       id="remember"
                     />
                     <label for="remember"> Remember Me</label>
-                  </div>
+                  </div> */}
                   <div className="form-group">
                     <div className="row">
                       <div className="col-sm-6 col-sm-offset-3">
@@ -103,16 +163,29 @@ function RightColLogin(props) {
                     </div>
                   </div>
                 </form>
-                <form id="register-form" action="#" method="post">
+                <form id="register-form" onSubmit={regSubmitHandler}>
                   <div className="form-group">
                     <input
                       type="text"
-                      name="username"
-                      id="username"
+                      name="firstname"
+                      id="firstname"
                       tabindex="1"
                       className="form-control"
-                      placeholder="Username"
-                      value=""
+                      placeholder="First Name"
+                      value={regState.firstname}
+                      onChange={onChangeReg}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      tabindex="1"
+                      className="form-control"
+                      placeholder="Last Name"
+                      value={regState.lastname}
+                      onChange={onChangeReg}
                     />
                   </div>
                   <div className="form-group">
@@ -123,7 +196,8 @@ function RightColLogin(props) {
                       tabindex="1"
                       className="form-control"
                       placeholder="Email Address"
-                      value=""
+                      value={regState.email}
+                      onChange={onChangeReg}
                     />
                   </div>
                   <div className="form-group">
@@ -134,18 +208,11 @@ function RightColLogin(props) {
                       tabindex="2"
                       className="form-control"
                       placeholder="Password"
+                      value={regState.password}
+                      onChange={onChangeReg}
                     />
                   </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      name="confirm-password"
-                      id="confirm-password"
-                      tabindex="2"
-                      className="form-control"
-                      placeholder="Confirm Password"
-                    />
-                  </div>
+
                   <div className="form-group">
                     <div className="row">
                       <div className="col-sm-6 col-sm-offset-3">

@@ -5,7 +5,7 @@ function TopNav(props) {
   const {
     loggedIn,
     glogin,
-    username,
+    data,
     logoutHandler,
     googleLogoutHandler,
   } = props.props;
@@ -79,7 +79,7 @@ function TopNav(props) {
               <ul className="header-top-right text-right">
                 {loggedIn ? (
                   <>
-                    <li className="account">WelCome , {username}</li>
+                    <li className="account">WelCome , {data.username}</li>
                     <li>
                       {glogin ? (
                         <a onClick={googleLogoutHandler}>Logout</a>
