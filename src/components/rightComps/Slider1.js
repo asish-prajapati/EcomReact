@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColSlider1() {
+function Slider1() {
   return (
     <div id="product-tab" className="mt_40">
       <div className="heading-part mb_20 ">
@@ -2381,4 +2381,4 @@ function RightColSlider1() {
   );
 }
 
-export default RightColSlider1;
+export default Slider1;

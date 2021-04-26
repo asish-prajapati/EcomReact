@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColReviews() {
+function Reviews() {
   return (
     <div className="row">
       <div className="col-md-12">
@@ -106,4 +106,4 @@ function RightColReviews() {
   );
 }
 
-export default RightColReviews;
+export default Reviews;

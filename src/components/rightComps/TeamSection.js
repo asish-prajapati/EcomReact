@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColTeamSection() {
+function TeamSection() {
   return (
     <>
       <div className="heading-part mb_10">
@@ -205,4 +205,4 @@ function RightColTeamSection() {
   );
 }
 
-export default RightColTeamSection;
+export default TeamSection;

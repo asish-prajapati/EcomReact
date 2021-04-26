@@ -1,22 +1,22 @@
 import React from "react";
-import LeftColBanner1 from "../LeftColBanner1";
-import LeftColCategory from "../LeftColCategory";
-import RightColContactUs from "../RightColContactUs";
+import Banner1 from "../../leftComps/Banner1";
+import Category from "../../leftComps/Category";
+import ContactUs from "../../rightComps/ContactUs";
 
-function ContactUs() {
+function ContactUsPage() {
   return (
     <div className="container">
       <div className="row">
         <div id="column-left" className="col-sm-4 col-md-4 col-lg-3 ">
-          <LeftColCategory />
-          <LeftColBanner1 />
+          <Category />
+          <Banner1 />
         </div>
         <div id="column-right" className="col-sm-8 col-md-8 col-lg-9 mtb_30">
-          <RightColContactUs />
+          <ContactUs />
         </div>
       </div>
     </div>
   );
 }
 
-export default ContactUs;
+export default ContactUsPage;

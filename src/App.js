@@ -6,7 +6,7 @@ import MainFooter from "./components/footer/MainFooter";
 import HomePage from "./components/content/homepage/HomePage";
 import ProductPage from "./components/content/productpage/ProductPage";
 import BlogPage from "./components/content/blogpage/BlogPage";
-import ContactUs from "./components/content/contactusPage/ContactUs";
+import ContactUsPage from "./components/content/contactusPage/ContactUsPage";
 import CartPage from "./components/content/cartpage/CartPage";
 import CheckoutPage from "./components/content/checkoutpage/CheckoutPage";
 import ProductDetailPage from "./components/content/productdetailPage/ProductDetailPage";
@@ -109,7 +109,7 @@ function App() {
               <BlogPage />
             </Route>
             <Route exact path="/contactus">
-              <ContactUs />
+              <ContactUsPage />
             </Route>
             <Route exact path="/cart">
               <CartPage />

@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftColFilter() {
+function Filter() {
   return (
     <div className="filter left-sidebar-widget mb_50">
       <div className="heading-part mtb_20 ">
@@ -62,4 +62,4 @@ function LeftColFilter() {
   );
 }
 
-export default LeftColFilter;
+export default Filter;

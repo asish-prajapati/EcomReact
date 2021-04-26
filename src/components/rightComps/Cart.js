@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColCart() {
+function Cart() {
   return (
     <>
       <form enctype="multipart/form-data" method="post" action="#">
@@ -662,4 +662,4 @@ function RightColCart() {
   );
 }
 
-export default RightColCart;
+export default Cart;

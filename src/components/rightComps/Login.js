@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { GoogleLogin } from "react-google-login";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-function RightColLogin(props) {
+function Login(props) {
   const history = useHistory();
   const [regState, setRegState] = useState({
     firstname: "",
@@ -234,4 +234,4 @@ function RightColLogin(props) {
   );
 }
 
-export default RightColLogin;
+export default Login;

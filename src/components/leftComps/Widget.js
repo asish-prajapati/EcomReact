@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftColWidget() {
+function Widget() {
   return (
     <div className="left-cms left-sidebar-widget mb_50">
       <ul>
@@ -37,4 +37,4 @@ function LeftColWidget() {
   );
 }
 
-export default LeftColWidget;
+export default Widget;

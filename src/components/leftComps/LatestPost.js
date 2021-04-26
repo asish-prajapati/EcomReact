@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftColLatestPost() {
+function LatestPost() {
   return (
     <div className="left-blog left-sidebar-widget mb_50">
       <div className="heading-part mb_20 ">
@@ -71,4 +71,4 @@ function LeftColLatestPost() {
   );
 }
 
-export default LeftColLatestPost;
+export default LatestPost;

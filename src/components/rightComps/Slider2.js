@@ -1,7 +1,7 @@
 import React from "react";
 // import OwlCarousel from "react-owl-carousel";
 
-function RightColSlider2() {
+function Slider2() {
   return (
     <div id="sale-product">
       <div className="heading-part mb_20 ">
@@ -107,4 +107,4 @@ function RightColSlider2() {
   );
 }
 
-export default RightColSlider2;
+export default Slider2;

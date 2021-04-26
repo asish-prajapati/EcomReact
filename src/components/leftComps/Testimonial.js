@@ -2,7 +2,7 @@ import React from "react";
 
 // import OwlCarousel from "react-owl-carousel";
 
-function LeftColTestimonial() {
+function Testimonial() {
   return (
     <div className="Testimonial left-sidebar-widget mb_50">
       <div className="heading-part mb_20 ">
@@ -63,4 +63,4 @@ function LeftColTestimonial() {
   );
 }
 
-export default LeftColTestimonial;
+export default Testimonial;

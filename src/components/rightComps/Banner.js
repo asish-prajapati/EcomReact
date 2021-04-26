@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColBanner() {
+function Banner() {
   return (
     <div>
       <div className="banner">
@@ -20,4 +20,4 @@ function RightColBanner() {
   );
 }
 
-export default RightColBanner;
+export default Banner;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftColBlogCategory() {
+function BlogCategory() {
   return (
     <div className="blog-category left-sidebar-widget mb_50">
       <div className="heading-part mb_20 ">
@@ -51,4 +51,4 @@ function LeftColBlogCategory() {
   );
 }
 
-export default LeftColBlogCategory;
+export default BlogCategory;

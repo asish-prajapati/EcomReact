@@ -1,7 +1,7 @@
 import React from "react";
 // import OwlCarousel from "react-owl-carousel";
 
-function RightColSlider4() {
+function Slider4() {
   return (
     <div id="Blog" className="mt_40">
       <div className="heading-part mb_20 ">
@@ -162,4 +162,4 @@ function RightColSlider4() {
   );
 }
 
-export default RightColSlider4;
+export default Slider4;

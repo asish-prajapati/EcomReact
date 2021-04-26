@@ -1,8 +1,8 @@
 import React from "react";
-import LeftColCategory from "../LeftColCategory";
-import LeftColBanner1 from "../LeftColBanner1";
-import RightColLogin from "../RightColLogin";
-import Profile from "../Profile";
+import Category from "../../leftComps/Category";
+import Banner1 from "../../leftComps/Banner1";
+import Login from "../../rightComps/Login";
+import Profile from "../../otherComps/Profile";
 
 function LoginPage(props) {
   const { data, loginHandler, googleLoginHandler, loggedIn } = props;
@@ -10,14 +10,14 @@ function LoginPage(props) {
     <div className="container">
       <div className="row">
         <div id="column-left" className="col-sm-4 col-md-4 col-lg-3 ">
-          <LeftColCategory />
-          <LeftColBanner1 />
+          <Category />
+          <Banner1 />
         </div>
         <div id="column-right" className="col-sm-8 col-md-8 col-lg-9 mtb_30">
           {loggedIn ? (
             <Profile data={data} />
           ) : (
-            <RightColLogin
+            <Login
               loginHandler={loginHandler}
               googleLoginHandler={googleLoginHandler}
             />

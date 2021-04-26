@@ -1,7 +1,6 @@
 import React from "react";
-import Breadcrumb from "./Breadcrumb";
 
-function RightColCheckout() {
+function Checkout() {
   return (
     <>
       <div className="panel-group mt_20" id="accordion">
@@ -1319,4 +1318,4 @@ function RightColCheckout() {
   );
 }
 
-export default RightColCheckout;
+export default Checkout;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColAboutWidget() {
+function AboutWidget() {
   return (
     <div className="row">
       <div className="col-md-6">
@@ -160,4 +160,4 @@ function RightColAboutWidget() {
   );
 }
 
-export default RightColAboutWidget;
+export default AboutWidget;

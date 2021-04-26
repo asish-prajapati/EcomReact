@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColAbout() {
+function About() {
   return (
     <div className="row">
       <div className="col-md-12">
@@ -40,4 +40,4 @@ function RightColAbout() {
   );
 }
 
-export default RightColAbout;
+export default About;

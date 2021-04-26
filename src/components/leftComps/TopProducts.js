@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftColTopProducts() {
+function TopProducts() {
   return (
     <div className="left-special left-sidebar-widget mb_50">
       <div className="heading-part mb_20 ">
@@ -366,4 +366,4 @@ function LeftColTopProducts() {
   );
 }
 
-export default LeftColTopProducts;
+export default TopProducts;

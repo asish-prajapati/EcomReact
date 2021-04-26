@@ -1,7 +1,7 @@
 import React from "react";
 // import OwlCarousel from "react-owl-carousel";
 
-function RightColSlider3() {
+function Slider3() {
   return (
     <div className="row">
       {["Featured", "Bestseller", "New Item's"].map((title, index) => (
@@ -197,4 +197,4 @@ function RightColSlider3() {
   );
 }
 
-export default RightColSlider3;
+export default Slider3;

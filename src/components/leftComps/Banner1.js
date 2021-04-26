@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftColBanner1() {
+function Banner1() {
   return (
     <div className="left_banner left-sidebar-widget mt_30 mb_50">
       <a href="#">
@@ -14,4 +14,4 @@ function LeftColBanner1() {
   );
 }
 
-export default LeftColBanner1;
+export default Banner1;

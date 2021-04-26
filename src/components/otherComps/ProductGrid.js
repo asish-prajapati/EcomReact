@@ -72,15 +72,15 @@ function ProductGrid() {
                   <a href="product_detail_page.html">
                     <img
                       data-name="product_image"
-                      src="images/product/product1"
-                      alt="iPod classNameic"
-                      title="iPod classNameic"
+                      src="images/product/product1.jpg"
+                      alt="iPod "
+                      title="iPod "
                       className="img-responsive"
                     />
                     <img
-                      src="images/product/product1-1"
-                      alt="iPod classNameic"
-                      title="iPod classNameic"
+                      src="images/product/product1-1.jpg"
+                      alt="iPod "
+                      title="iPod"
                       className="img-responsive"
                     />
                   </a>

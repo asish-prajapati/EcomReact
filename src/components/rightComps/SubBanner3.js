@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColSubBanner3() {
+function SubBanner3() {
   return (
     <div className="row">
       <div className="cms_banner mt_60 mb_50">
@@ -21,4 +21,4 @@ function RightColSubBanner3() {
   );
 }
 
-export default RightColSubBanner3;
+export default SubBanner3;

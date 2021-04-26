@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColSingleBlog() {
+function SingleBlog() {
   return (
     <>
       <div className="row">
@@ -220,4 +220,4 @@ function RightColSingleBlog() {
   );
 }
 
-export default RightColSingleBlog;
+export default SingleBlog;

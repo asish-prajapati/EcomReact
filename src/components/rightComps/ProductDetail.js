@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightColProductDetail() {
+function ProductDetail() {
   return (
     <div className="row mt_10 ">
       <div className="col-md-6">
@@ -207,4 +207,4 @@ function RightColProductDetail() {
   );
 }
 
-export default RightColProductDetail;
+export default ProductDetail;
