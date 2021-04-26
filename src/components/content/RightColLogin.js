@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { GoogleLogin } from "react-google-login";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import axios from "axios";
 
 function RightColLogin(props) {
+  const history = useHistory();
   const [regState, setRegState] = useState({
     firstname: "",
     lastname: "",
     email: "",
     password: "",
-
-    redirectToReferrer: false,
   });
   const [loginState, setLoginState] = useState({ username: "", password: "" });
   function onChangeReg(e) {
@@ -25,7 +24,8 @@ function RightColLogin(props) {
     localStorage.setItem("regformData", JSON.stringify(regState));
     alert("Registered Successfully");
 
-    setRegState({ redirectToReferrer: true });
+    history.push("/");
+
     // axios
     //   .post("http://imginfotech.in/sixvalley/api/v1/auth/register", {
     //     f_name: regState.firstname,
@@ -59,9 +59,6 @@ function RightColLogin(props) {
     //   });
   }
 
-  if (regState.redirectToReferrer) {
-    return <Redirect to="/" />;
-  }
   return (
     <div className="row">
       <div className="col-md-6 col-md-offset-3">
