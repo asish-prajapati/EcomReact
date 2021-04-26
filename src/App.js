@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/header/Header";
@@ -13,15 +13,19 @@ import ProductDetailPage from "./components/content/productdetailPage/ProductDet
 import SingleBlogPage from "./components/content/singleblogPage/SingleBlogPage";
 import AboutPage from "./components/content/aboutpage/AboutPage";
 import LoginPage from "./components/content/loginpage/LoginPage";
+import useSocialAuth from "./services/SocialAuth";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [data, setData] = useState({
-    username: "",
-    profileimg: "",
-    email: "",
-  });
-  const [glogin, setGlogin] = useState(false);
+  const {
+    loggedIn,
+    data,
+    glogin,
+    loginHandler,
+    logoutHandler,
+    googleLoginHandler,
+    googleLogoutHandler,
+    statusChangeCallback,
+  } = useSocialAuth();
 
   useEffect(() => {
     window.fbAsyncInit = function () {
@@ -37,53 +41,6 @@ function App() {
       });
     };
   }, []);
-
-  function statusChangeCallback(response) {
-    if (response.status === "connected") {
-      setLoggedIn(true);
-      setGlogin(false);
-      window.FB.api(
-        "/me",
-        // { fields: "name,email,profile_pic" },
-        // { access_token: response.accessToken },
-        function (response) {
-          setData({ ...data, username: response.name, email: response.email });
-          console.log(response);
-        }
-      );
-    } else {
-      setLoggedIn(false);
-    }
-  }
-
-  function loginHandler() {
-    window.FB.login(
-      function (response) {
-        statusChangeCallback(response);
-      },
-      { scope: "public_profile,email" }
-    );
-  }
-  function logoutHandler() {
-    window.FB.logout((response) => {
-      statusChangeCallback(response);
-    });
-  }
-  const googleLoginHandler = (response) => {
-    if (response.accessToken) {
-      setLoggedIn(true);
-      setGlogin(true);
-      setData({
-        username: response.profileObj.name,
-        profileimg: response.profileObj.imageUrl,
-        email: response.profileObj.email,
-      });
-      console.log(response.profileObj);
-    }
-  };
-  const googleLogoutHandler = (response) => {
-    setLoggedIn(false);
-  };
 
   return (
     <>
