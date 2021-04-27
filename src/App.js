@@ -20,8 +20,8 @@ function App() {
     loggedIn,
     data,
     glogin,
-    loginHandler,
-    logoutHandler,
+    fbloginHandler,
+    fblogoutHandler,
     googleLoginHandler,
     googleLogoutHandler,
     statusChangeCallback,
@@ -52,7 +52,7 @@ function App() {
             loggedIn={loggedIn}
             glogin={glogin}
             data={data}
-            logoutHandler={logoutHandler}
+            logoutHandler={fblogoutHandler}
             googleLogoutHandler={googleLogoutHandler}
           />
           <Switch>
@@ -86,7 +86,7 @@ function App() {
             <Route exact path="/login">
               <LoginPage
                 data={data}
-                loginHandler={loginHandler}
+                loginHandler={fbloginHandler}
                 googleLoginHandler={googleLoginHandler}
                 loggedIn={loggedIn}
               />

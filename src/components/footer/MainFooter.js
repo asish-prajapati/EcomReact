@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BottomFooter from "./BottomFooter";
 
 function MainFooter() {
@@ -90,10 +91,10 @@ function MainFooter() {
                 <a href="#">Our Stores</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <Link to="/contactus">Contact Us</Link>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <Link to="/aboutus">About Us</Link>
               </li>
             </ul>
           </div>
@@ -101,22 +102,22 @@ function MainFooter() {
             <h6 className="footer-title ptb_20">My Account</h6>
             <ul>
               <li>
-                <a href="#">Checkout</a>
+                <Link to="/checkout">Checkout</Link>
               </li>
               <li>
-                <a href="#">My Account</a>
+                <Link to="/login">My Account</Link>
               </li>
               <li>
-                <a href="#">My Orders</a>
+                <Link to="/">My Orders</Link>
               </li>
               <li>
-                <a href="#">My Credit Slips</a>
+                <Link to="/">My Credit Slips</Link>
               </li>
               <li>
-                <a href="#">My Addresses</a>
+                <Link to="/">My Addresses</Link>
               </li>
               <li>
-                <a href="#">My Personal Info</a>
+                <Link to="/">My Personal Info</Link>
               </li>
             </ul>
           </div>

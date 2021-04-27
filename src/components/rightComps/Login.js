@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GoogleLogin } from "react-google-login";
 import { useHistory } from "react-router-dom";
+import { AnimateOnChange } from "react-animation";
 import axios from "axios";
 
 function Login(props) {
@@ -12,6 +13,23 @@ function Login(props) {
     password: "",
   });
   const [loginState, setLoginState] = useState({ username: "", password: "" });
+  const [pannelClass, setPannelClass] = useState({
+    active: true,
+    display: true,
+  });
+
+  function showLogin() {
+    setPannelClass({
+      active: true,
+      display: true,
+    });
+  }
+  function showReg() {
+    setPannelClass({
+      active: false,
+      display: false,
+    });
+  }
   function onChangeReg(e) {
     setRegState({ ...regState, [e.target.name]: e.target.value });
   }
@@ -66,12 +84,22 @@ function Login(props) {
           <div className="panel-heading">
             <div className="row mb_20">
               <div className="col-xs-6">
-                <a className="active" id="login-form-link">
+                <a
+                  className={pannelClass.active === true ? "active" : null}
+                  id="login-form-link"
+                  onClick={showLogin}
+                >
                   Login
                 </a>
               </div>
               <div className="col-xs-6">
-                <a id="register-form-link">Register</a>
+                <a
+                  className={pannelClass.active === false ? "active" : null}
+                  id="register-form-link"
+                  onClick={showReg}
+                >
+                  Register
+                </a>
               </div>
             </div>
             <hr />
@@ -80,32 +108,44 @@ function Login(props) {
             <div className="row">
               <div className="col-lg-12">
                 {/* formtag */}
-                <form id="login-form" onSubmit={loginSubmitHandler}>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="username"
-                      id="username1"
-                      tabindex="1"
-                      className="form-control"
-                      placeholder="Username"
-                      value={loginState.username}
-                      onChange={onChangeLogin}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      tabindex="2"
-                      className="form-control"
-                      placeholder="Password"
-                      value={loginState.password}
-                      onChange={onChangeLogin}
-                    />
-                  </div>
-                  {/* <div className="form-group text-center">
+                <AnimateOnChange
+                  animationIn="bounceIn"
+                  animationOut="bounceOut"
+                  style={{ display: "block" }}
+                >
+                  <form
+                    style={
+                      pannelClass.display === true
+                        ? { display: "block" }
+                        : { display: "none" }
+                    }
+                    onSubmit={loginSubmitHandler}
+                  >
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        name="username"
+                        id="username1"
+                        tabindex="1"
+                        className="form-control"
+                        placeholder="Username"
+                        value={loginState.username}
+                        onChange={onChangeLogin}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        tabindex="2"
+                        className="form-control"
+                        placeholder="Password"
+                        value={loginState.password}
+                        onChange={onChangeLogin}
+                      />
+                    </div>
+                    {/* <div className="form-group text-center">
                     <input
                       type="checkbox"
                       tabindex="3"
@@ -115,116 +155,130 @@ function Login(props) {
                     />
                     <label for="remember"> Remember Me</label>
                   </div> */}
-                  <div className="form-group">
-                    <div className="row">
-                      <div className="col-sm-6 col-sm-offset-3">
-                        <input
-                          type="submit"
-                          name="login-submit"
-                          id="login-submit"
-                          tabindex="4"
-                          className="form-control btn btn-login"
-                          value="Log In"
-                        />{" "}
-                        <br /> <br />
-                        <button
-                          tabindex="4"
-                          className="form-control btn"
-                          style={{ backgroundColor: "blue" }}
-                          onClick={props.loginHandler}
-                        >
-                          Login with Facebook
-                        </button>
-                        <br />
-                        <br />
-                        <GoogleLogin
-                          clientId="789665118583-idmd3srqpri5r5qf0u0thgllffj7u77e.apps.googleusercontent.com"
-                          buttonText="Login"
-                          onSuccess={props.googleLoginHandler}
-                          cookiePolicy={"single_host_origin"}
-                          buttonText="Login with Google"
-                          className="form-control btn"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="text-center">
-                          <a href="#" tabindex="5" className="forgot-password">
-                            Forgot Password?
-                          </a>
+                    <div className="form-group">
+                      <div className="row">
+                        <div className="col-sm-6 col-sm-offset-3">
+                          <input
+                            type="submit"
+                            name="login-submit"
+                            id="login-submit"
+                            tabindex="4"
+                            className="form-control btn btn-login"
+                            value="Log In"
+                          />{" "}
+                          <br /> <br />
+                          <button
+                            tabindex="4"
+                            className="form-control btn"
+                            style={{ backgroundColor: "blue" }}
+                            onClick={props.loginHandler}
+                          >
+                            Login with Facebook
+                          </button>
+                          <br />
+                          <br />
+                          <GoogleLogin
+                            clientId="789665118583-idmd3srqpri5r5qf0u0thgllffj7u77e.apps.googleusercontent.com"
+                            buttonText="Login"
+                            onSuccess={props.googleLoginHandler}
+                            cookiePolicy={"single_host_origin"}
+                            buttonText="Login with Google"
+                            className="form-control btn"
+                          />
                         </div>
                       </div>
                     </div>
-                  </div>
-                </form>
-                <form id="register-form" onSubmit={regSubmitHandler}>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="firstname"
-                      id="firstname"
-                      tabindex="1"
-                      className="form-control"
-                      placeholder="First Name"
-                      value={regState.firstname}
-                      onChange={onChangeReg}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="lastname"
-                      id="lastname"
-                      tabindex="1"
-                      className="form-control"
-                      placeholder="Last Name"
-                      value={regState.lastname}
-                      onChange={onChangeReg}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      tabindex="1"
-                      className="form-control"
-                      placeholder="Email Address"
-                      value={regState.email}
-                      onChange={onChangeReg}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password2"
-                      tabindex="2"
-                      className="form-control"
-                      placeholder="Password"
-                      value={regState.password}
-                      onChange={onChangeReg}
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <div className="row">
-                      <div className="col-sm-6 col-sm-offset-3">
-                        <input
-                          type="submit"
-                          name="register-submit"
-                          id="register-submit"
-                          tabindex="4"
-                          className="form-control btn btn-register"
-                          value="Register Now"
-                        />
+                    <div className="form-group">
+                      <div className="row">
+                        <div className="col-lg-12">
+                          <div className="text-center">
+                            <a
+                              href="#"
+                              tabindex="5"
+                              className="forgot-password"
+                            >
+                              Forgot Password?
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </AnimateOnChange>
+                <AnimateOnChange style={{ display: "block" }}>
+                  <form
+                    style={
+                      pannelClass.display === false
+                        ? { display: "block" }
+                        : { display: "none" }
+                    }
+                    onSubmit={regSubmitHandler}
+                  >
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        tabindex="1"
+                        className="form-control"
+                        placeholder="First Name"
+                        value={regState.firstname}
+                        onChange={onChangeReg}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        tabindex="1"
+                        className="form-control"
+                        placeholder="Last Name"
+                        value={regState.lastname}
+                        onChange={onChangeReg}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        tabindex="1"
+                        className="form-control"
+                        placeholder="Email Address"
+                        value={regState.email}
+                        onChange={onChangeReg}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password2"
+                        tabindex="2"
+                        className="form-control"
+                        placeholder="Password"
+                        value={regState.password}
+                        onChange={onChangeReg}
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <div className="row">
+                        <div className="col-sm-6 col-sm-offset-3">
+                          <input
+                            type="submit"
+                            name="register-submit"
+                            id="register-submit"
+                            tabindex="4"
+                            className="form-control btn btn-register"
+                            value="Register Now"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </AnimateOnChange>
               </div>
             </div>
           </div>

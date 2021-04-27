@@ -27,7 +27,7 @@ function useSocialAuth() {
     }
   }
 
-  function loginHandler() {
+  function fbloginHandler() {
     window.FB.login(
       function (response) {
         statusChangeCallback(response);
@@ -35,7 +35,7 @@ function useSocialAuth() {
       { scope: "public_profile,email" }
     );
   }
-  function logoutHandler() {
+  function fblogoutHandler() {
     window.FB.logout((response) => {
       statusChangeCallback(response);
     });
@@ -60,8 +60,8 @@ function useSocialAuth() {
     loggedIn,
     data,
     glogin,
-    loginHandler,
-    logoutHandler,
+    fbloginHandler,
+    fblogoutHandler,
     googleLoginHandler,
     googleLogoutHandler,
     statusChangeCallback,

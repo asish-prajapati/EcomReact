@@ -119,22 +119,22 @@ $(function () {
     makeTimer();
   }, 1000);
   /* ===== Login Register Tab  =====   */
-  function log_reg_tab() {
-    $("#login-form-link").on("click", function (e) {
-      $("#login-form").delay(100).fadeIn(100);
-      $("#register-form").fadeOut(100);
-      $("#register-form-link").removeClass("active");
-      $(this).addClass("active");
-      e.preventDefault();
-    });
-    $("#register-form-link").on("click", function (e) {
-      $("#register-form").delay(100).fadeIn(100);
-      $("#login-form").fadeOut(100);
-      $("#login-form-link").removeClass("active");
-      $(this).addClass("active");
-      e.preventDefault();
-    });
-  }
+  // function log_reg_tab() {
+  //   $("#login-form-link").on("click", function (e) {
+  //     $("#login-form").delay(100).fadeIn(100);
+  //     $("#register-form").fadeOut(100);
+  //     $("#register-form-link").removeClass("active");
+  //     $(this).addClass("active");
+  //     e.preventDefault();
+  //   });
+  //   $("#register-form-link").on("click", function (e) {
+  //     $("#register-form").delay(100).fadeIn(100);
+  //     $("#login-form").fadeOut(100);
+  //     $("#login-form-link").removeClass("active");
+  //     $(this).addClass("active");
+  //     e.preventDefault();
+  //   });
+  // }
   /*  footer toggle */
   function footerToggle() {
     if ($(window).width() < 991) {
@@ -399,7 +399,7 @@ $(function () {
     search();
     footerToggle();
     m_popup_select();
-    log_reg_tab();
+    // log_reg_tab();
   });
 
   $(window).ready(function () {
